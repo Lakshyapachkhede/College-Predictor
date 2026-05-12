@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+
+{% block title %}MP BTech Lateral Entry Predictor{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="container hero-container">
+        <h1>MP BTech Lateral Entry College Predictor</h1>
+        <p class="subtitle" >
+            Predict your best colleges, estimate your rank, and explore engineering colleges
+            across Madhya Pradesh using historical counselling data.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/predictor" class="hero-btn primary">College Predictor</a>
+            <a href="/rank_predictor" class="hero-btn secondary">Rank Predictor</a>
+            <a href="/search" class="hero-btn secondary">Search Colleges</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-card">
+                <h3>2+</h3>
+                <p>Years of Data</p>
+            </div>
+            <div class="stat-card">
+                <h3>250+</h3>
+                <p>Engineering Colleges</p>
+            </div>
+            <div class="stat-card">
+                <h3>9000+</h3>
+                <p>Cutoff Records</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FEATURES SECTION ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Tools Available</h2>
+        <p class="subtitle">
+            Everything you need to make informed lateral entry admission decisions.
+        </p>
+
+        <div class="cards-grid">
+            <a href="/predictor" class="feature-card">
+                <div class="feature-icon"> <img src="{{ url_for('static', filename='img/target.png') }}" alt=""> </div>
+                <h3>College Predictor</h3>
+                <p>
+                    Enter your CGPA, category, gender, and branch preference
+                    to get likely colleges.
+                </p>
+            </a>
+
+            <a href="/rank_predictor" class="feature-card">
+                <div class="feature-icon"><img src="{{ url_for('static', filename='img/analysis.png') }}" alt=""></div>
+                <h3>Rank Predictor</h3>
+                <p>
+                    Estimate your probable merit rank based on previous
+                    admission trends.
+                </p>
+            </a>
+
+            <a href="/search" class="feature-card">
+                <div class="feature-icon"><img src="{{ url_for('static', filename='img/search.png') }}" alt=""></div>
+                <h3>Search Colleges</h3>
+                <p>
+                    Explore colleges, branches, seat intake,
+                    and previous year cutoffs.
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= WHY USE THIS TOOL ================= -->
+<section class="section alt-bg">
+    <div class="container">
+        <h2>Why Use This Tool?</h2>
+
+        <div class="cards-grid">
+            <div class="info-card">
+                <h3>Accurate Predictions</h3>
+                <p>
+                    Predictions are based on real historical counselling
+                    cutoff data from DTE Madhya Pradesh.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Save Time</h3>
+                <p>
+                    Instantly discover colleges matching your profile
+                    without manually checking multiple PDFs.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Better Choice Filling</h3>
+                <p>
+                    Build a smarter counselling strategy with realistic
+                    admission chances.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Free to Use</h3>
+                <p>
+                    No registration required. Fast, simple, and available
+                    to all students.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section">
+    <div class="container">
+        <h2>How It Works</h2>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Enter Details</h3>
+                <p>
+                    Provide CGPA, category, gender, branch,
+                    and college type preference.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Historical Data Matching</h3>
+                <p>
+                    Your profile is matched against previous years’ opening and closing ranks to identify colleges where admission was possible.
+                </p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Get Predictions</h3>
+                <p>
+                    Receive categorized college predictions
+                    with supporting cutoff details.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DATA SOURCE ================= -->
+<section class="section alt-bg">
+    <div class="container">
+        <h2>Data Source</h2>
+        <p class="section-text">
+            This platform uses publicly available counselling data published by
+            the <a class="link" href="https://dte.mponline.gov.in/portal/services/onlinecounselling/counshomepage/home.aspx">Directorate of Technical Education (DTE), Madhya Pradesh</a>.
+            Historical opening and closing ranks from multiple counselling years
+            are processed to generate predictions.
+        </p>
+        <p class="section-text">
+            While every effort is made to ensure accuracy, results should be used
+            as guidance only and not as an official admission guarantee.
+        </p>
+    </div>
+</section>
+
+<!-- ================= WHO CAN USE ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Who Can Use This Platform?</h2>
+
+        <div class="cards-grid">
+            <div class="info-card">
+                <h3>Diploma Students</h3>
+                <p>
+                    Students seeking direct admission to second year B.Tech
+                    through lateral entry.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Parents</h3>
+                <p>
+                    Compare realistic options and support informed decisions.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Counsellors</h3>
+                <p>
+                    Quickly evaluate admission possibilities for students.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ SECTION ================= -->
+<section class="section alt-bg">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Is this tool official?</h3>
+            <p>
+                No. This is an independent analysis tool built using publicly
+                available counselling data.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How accurate are the predictions?</h3>
+            <p>
+                Predictions are based on historical trends and are intended as
+                estimates, not guarantees.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do I need to sign up?</h3>
+            <p>No. All tools are completely free to use.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA SECTION ================= -->
+<section class="section cta-section">
+    <div class="container">
+        <h2>Ready to Explore Your Options?</h2>
+        <p class="subtitle">
+            Start predicting colleges and plan your counselling strategy today.
+        </p>
+        <a href="/predictor" class="hero-btn primary">Start College Prediction</a>
+    </div>
+</section>
+
+{% endblock %}

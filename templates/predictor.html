@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - MP BTech Lateral Entry College Predictor{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="container" id="predictor">
+        <h1>MP BTech Lateral Entry College Predictor</h1>
+        <p class="subtitle">
+            Enter your academic details to predict the best colleges for lateral entry admission in Madhya Pradesh.
+        </p>
+
+        <form action="/" method="POST">
+
+            <!-- CGPA Input -->
+            <div class="form-group">
+                <label for="cgpa">CGPA</label>
+                <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" placeholder="e.g. 8.33" required
+                    value="{{ data.cgpa }}">
+            </div>
+
+            <!-- Category Selector -->
+            {% set category = data.category if data else '' %}
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled disabled {% if not gender %}selected{% endif %}>Select Category</option>
+                    <option value="UR" {% if category=='UR' %}selected{% endif %}>UR (General)</option>
+                    <option value="OBC" {% if category=='OBC' %}selected{% endif %}>OBC</option>
+                    <option value="SC" {% if category=='SC' %}selected{% endif %}>SC</option>
+                    <option value="ST" {% if category=='ST' %}selected{% endif %}>ST</option>
+                </select>
+            </div>
+
+            <!-- Gender Selector -->
+            {% set gender = data.gender if data else '' %}
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+        
+                    <option value="" disabled {% if not gender %}selected{% endif %}>Select Gender</option>
+                    <option value="M" {% if gender=='M' %}selected{% endif %}>Male</option>
+                    <option value="F" {% if gender=='F' %}selected{% endif %}>Female</option>
+                </select>
+            </div>
+
+            <!-- College Type Selector -->
+            {% set college_type = data.college_type if data else '' %}
+            <div class="form-group">
+                <label for="college_type">Preferred College Type</label>
+                <select id="college_type" name="college_type" required>
+                    <option value="" disabled {% if not college_type %}selected{% endif %}>Select College Type</option>
+                    <option value="GOVT" {% if college_type=='GOVT' %}selected{% endif %}>Government</option>
+                    <option value="Private" {% if college_type=='Private' %}selected{% endif %}>Private</option>
+                    <option value="S.F.I." {% if college_type=='S.F.I.' %}selected{% endif %}>S.F.I.</option>
+                    <option value="Any" {% if college_type=='Any' %}selected{% endif %}>Any</option>
+                </select>
+            </div>
+
+            <!-- Branch Selector -->
+            {% set branch = data.branch if data else '' %}
+            <div class="form-group">
+                <label for="branch">Preferred Branch</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled {% if not branch %}selected{% endif %}>Select Branch</option>
+                    {% include 'components/branch_options.html' %}
+                    
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Predict Colleges</button>
+        </form>
+    </div>
+    {% if data %}
+    <div class="container" id="results">
+        <h1>Predicted Colleges</h1>
+
+        <p class="subtitle">
+            Based on your CGPA and preferences, the following colleges are recommended.
+        </p>
+
+        <!-- User Input Summary -->
+        <div class="summary-box">
+            <p><strong>CGPA:</strong> {{ data.cgpa }}</p>
+            <p><strong>Category:</strong> {{ data.category }}</p>
+            <p><strong>Gender:</strong> {{ data.gender }}</p>
+            <p><strong>College Type:</strong> {{ data.college_type }}</p>
+            <p><strong>Branch:</strong> {{ data.branch }}</p>
+        </div>
+
+        {% for year, data in predection.items() %}
+        <h2>Year {{year}}</h2>
+
+
+        <div class="prediction-box">
+            {{ data.prediction }}
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+
+                        <th>College Name</th>
+                        <th>Type</th>
+                        <th>Open Rank</th>
+                        <th>Close Rank</th>
+                        <th>Domicile</th>
+                        <th>Total Seats</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for college in data.colleges %}
+                    <tr>
+
+                        <td>{{ college.college_name }}</td>
+                        <td>{{ college.college_type }}</td>
+                        <td>{{ college.opening_rank }}</td>
+                        <td>{{ college.closing_rank }}</td>
+                        <td>{{ college.domicile }}</td>
+                        <td>{{ college.total_seats }}</td>
+
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            {% if data.colleges | length == 0 %}
+            <p>No colleges found matching your criteria.</p>
+            {% endif %}
+
+        </div>
+        {% endfor %}
+
+
+
+
+    </div>
+    {% endif %}
+
+
+{% endblock %}

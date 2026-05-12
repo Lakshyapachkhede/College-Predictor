@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Rank Predictor - MP BTech Lateral Entry College Predictor{% endblock %}
+
+{% block content %}
+
+
+<div class="container search-container">
+    <h1>Rank Predictor</h1>
+    <p class="subtitle">
+        Know your M.P. polytechnic Rank.
+    </p>
+
+    <form action="/rank_predictor" method="POST" class="search-form">
+        <!-- Search Box -->
+        <div class="form-group">
+            <label for="cgpa">CGPA</label>
+            <input type="number" class="search-input" id="cgpa" name="cgpa" step="0.01" min="0" max="10"
+                placeholder="e.g. 8.33" required value="{{ data.cgpa }}">
+        </div>
+
+
+        <button type="submit" class="search-btn">Predict</button>
+    </form>
+</div>
+
+{% if data %}
+
+<div class="container" id="results">
+
+
+    {% for year, data in predection.items() %}
+
+    <h2>Year {{year}}</h2>
+
+
+    <div class="prediction-box">
+        {{ data.prediction }}
+    </div>
+
+
+
+
+    {% endfor %}
+
+
+</div>
+
+
+{% endif %}
+
+
+{% endblock %}

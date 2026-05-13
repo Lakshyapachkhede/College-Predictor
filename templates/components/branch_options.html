@@ -1,80 +1,183 @@
-                    <option value="CIVIL" {% if branch=='CIVIL' %}selected{% endif %}>Civil Engineering</option>
-                    <option value="CSE" {% if branch=='CSE' %}selected{% endif %}>Computer Science Engineering (CSE)
-                    </option>
-                    <option value="CSECS" {% if branch=='CSECS' %}selected{% endif %}>Computer Science and Cyber
-                        Security</option>
-                    <option value="CSEDS" {% if branch=='CSEDS' %}selected{% endif %}>Computer Science and Data Science
-                    </option>
-                    <option value="CSEIL" {% if branch=='CSEIL' %}selected{% endif %}>Computer Science and Information
-                        Technology</option>
-                    <option value="CSEIML" {% if branch=='CSEIML' %}selected{% endif %}>Computer Science and Artificial
-                        Intelligence & Machine Learning</option>
-                    <option value="IT" {% if branch=='IT' %}selected{% endif %}>Information Technology (IT)</option>
-                    <option value="EC" {% if branch=='EC' %}selected{% endif %}>Electronics and Communication
-                        Engineering</option>
-                    <option value="ECACT" {% if branch=='ECACT' %}selected{% endif %}>Electronics and Communication
-                        (Advanced Communication Technology)</option>
-                    <option value="MECH" {% if branch=='MECH' %}selected{% endif %}>Mechanical Engineering</option>
-                    <option value="ELECT ELEX" {% if branch=='ELECT ELEX' %}selected{% endif %}>Electrical and
-                        Electronics Engineering</option>
-                    <option value="FTS" {% if branch=='FTS' %}selected{% endif %}>Food Technology and Science</option>
-                    <option value="MINING" {% if branch=='MINING' %}selected{% endif %}>Mining Engineering</option>
-                    <option value="EE" {% if branch=='EE' %}selected{% endif %}>Electrical Engineering</option>
-                    <option value="AIADS" {% if branch=='AIADS' %}selected{% endif %}>Artificial Intelligence and Data
-                        Science</option>
-                    <option value="AIML" {% if branch=='AIML' %}selected{% endif %}>Artificial Intelligence & Machine
-                        Learning</option>
-                    <option value="CMPS" {% if branch=='CMPS' %}selected{% endif %}>Computer Science and Mathematical
-                        Sciences</option>
-                    <option value="CSD" {% if branch=='CSD' %}selected{% endif %}>Computer Science and Design</option>
-                    <option value="EI" {% if branch=='EI' %}selected{% endif %}>Electronics and Instrumentation
-                        Engineering</option>
-                    <option value="ET" {% if branch=='ET' %}selected{% endif %}>Electronics and Telecommunication
-                        Engineering</option>
-                    <option value="CHEM" {% if branch=='CHEM' %}selected{% endif %}>Chemical Engineering</option>
-                    <option value="CSEIOT" {% if branch=='CSEIOT' %}selected{% endif %}>Computer Science and Internet of
-                        Things</option>
-                    <option value="CSEITCS" {% if branch=='CSEITCS' %}selected{% endif %}>Computer Science and
-                        Information Technology with Cyber Security</option>
-                    <option value="CSERC" {% if branch=='CSERC' %}selected{% endif %}>Computer Science and Robotics &
-                        Cybernetics</option>
-                    <option value="AIAIDS" {% if branch=='AIAIDS' %}selected{% endif %}>Artificial Intelligence and
-                        Applied Data Science</option>
-                    <option value="IP" {% if branch=='IP' %}selected{% endif %}>Industrial Production Engineering
-                    </option>
-                    <option value="MTENG" {% if branch=='MTENG' %}selected{% endif %}>Metallurgical Engineering</option>
-                    <option value="MMP" {% if branch=='MMP' %}selected{% endif %}>Metallurgy and Materials Processing
-                    </option>
-                    <option value="EEIOT" {% if branch=='EEIOT' %}selected{% endif %}>Electrical Engineering with
-                        Internet of Things</option>
-                    <option value="EL" {% if branch=='EL' %}selected{% endif %}>Electronics Engineering</option>
-                    <option value="ITAIAR" {% if branch=='ITAIAR' %}selected{% endif %}>Information Technology with AI
-                        and Augmented Reality</option>
-                    <option value="ITIOT" {% if branch=='ITIOT' %}selected{% endif %}>Information Technology with
-                        Internet of Things</option>
-                    <option value="ARE" {% if branch=='ARE' %}selected{% endif %}>Automobile and Robotics Engineering
-                    </option>
-                    <option value="CSEBC" {% if branch=='CSEBC' %}selected{% endif %}>Computer Science and Business
-                        Computing</option>
-                    <option value="INOT" {% if branch=='INOT' %}selected{% endif %}>Instrumentation and Internet of
-                        Things</option>
-                    <option value="ECS" {% if branch=='ECS' %}selected{% endif %}>Electronics and Computer Science
-                    </option>
-                    <option value="CSBS" {% if branch=='CSBS' %}selected{% endif %}>Computer Science and Business
-                        Systems</option>
-                    <option value="DS" {% if branch=='DS' %}selected{% endif %}>Data Science</option>
-                    <option value="BM" {% if branch=='BM' %}selected{% endif %}>Biomedical Engineering</option>
-                    <option value="EV" {% if branch=='EV' %}selected{% endif %}>Environmental Engineering</option>
-                    <option value="CSEAI" {% if branch=='CSEAI' %}selected{% endif %}>Computer Science and Artificial
-                        Intelligence</option>
-                    <option value="CSEAIADS" {% if branch=='CSEAIADS' %}selected{% endif %}>Computer Science with AI and
-                        Data Science</option>
-                    <option value="AUTO" {% if branch=='AUTO' %}selected{% endif %}>Automobile Engineering</option>
-                    <option value="PCT" {% if branch=='PCT' %}selected{% endif %}>Petrochemical Technology</option>
-                    <option value="AIR" {% if branch=='AIR' %}selected{% endif %}>Artificial Intelligence and Robotics
-                    </option>
-                    <option value="AI" {% if branch=='AI' %}selected{% endif %}>Artificial Intelligence</option>
-                    <option value="MAC" {% if branch=='MAC' %}selected{% endif %}>Mathematics and Computing</option>
-                    <option value="AGE" {% if branch=='AGE' %}selected{% endif %}>Agricultural Engineering</option>
-                    <option value="CSEML" {% if branch=='CSEML' %}selected{% endif %}>Computer Science and Machine
-                        Learning</option>
+<!-- Most Popular / Highest Demand -->
+<optgroup label="Most Popular">
+    <option value="CSE" {% if branch=='CSE' %}selected{% endif %}>
+        Computer Science Engineering (CSE)
+    </option>
+    <option value="IT" {% if branch=='IT' %}selected{% endif %}>
+        Information Technology (IT)
+    </option>
+    <option value="AIML" {% if branch=='AIML' %}selected{% endif %}>
+        Artificial Intelligence & Machine Learning
+    </option>
+    <option value="AIADS" {% if branch=='AIADS' %}selected{% endif %}>
+        Artificial Intelligence and Data Science
+    </option>
+    <option value="DS" {% if branch=='DS' %}selected{% endif %}>
+        Data Science
+    </option>
+    <option value="CSEAI" {% if branch=='CSEAI' %}selected{% endif %}>
+        Computer Science and Artificial Intelligence
+    </option>
+    <option value="CSEIML" {% if branch=='CSEIML' %}selected{% endif %}>
+        Computer Science and Artificial Intelligence & Machine Learning
+    </option>
+    <option value="CSEDS" {% if branch=='CSEDS' %}selected{% endif %}>
+        Computer Science and Data Science
+    </option>
+    <option value="CSEAIADS" {% if branch=='CSEAIADS' %}selected{% endif %}>
+        Computer Science with AI and Data Science
+    </option>
+    <option value="CSEML" {% if branch=='CSEML' %}selected{% endif %}>
+        Computer Science and Machine Learning
+    </option>
+    <option value="AI" {% if branch=='AI' %}selected{% endif %}>
+        Artificial Intelligence
+    </option>
+    <option value="MAC" {% if branch=='MAC' %}selected{% endif %}>
+        Mathematics and Computing
+    </option>
+</optgroup>
+
+<!-- Popular Computer Science Specializations -->
+<optgroup label="CS Specializations">
+    <option value="CSEAI" {% if branch=='CSEAI' %}selected{% endif %}>
+        Computer Science and Artificial Intelligence
+    </option>
+    <option value="CSEDS" {% if branch=='CSEDS' %}selected{% endif %}>
+        Computer Science and Data Science
+    </option>
+    <option value="CSECS" {% if branch=='CSECS' %}selected{% endif %}>
+        Computer Science and Cyber Security
+    </option>
+    <option value="CSEIML" {% if branch=='CSEIML' %}selected{% endif %}>
+        Computer Science and Artificial Intelligence & Machine Learning
+    </option>
+    <option value="CSEIL" {% if branch=='CSEIL' %}selected{% endif %}>
+        Computer Science and Information Technology
+    </option>
+    <option value="CSEIOT" {% if branch=='CSEIOT' %}selected{% endif %}>
+        Computer Science and Internet of Things
+    </option>
+    <option value="CSEITCS" {% if branch=='CSEITCS' %}selected{% endif %}>
+        Computer Science and Information Technology with Cyber Security
+    </option>
+    <option value="CSERC" {% if branch=='CSERC' %}selected{% endif %}>
+        Computer Science and Robotics & Cybernetics
+    </option>
+    <option value="CSEBC" {% if branch=='CSEBC' %}selected{% endif %}>
+        Computer Science and Business Computing
+    </option>
+    <option value="CSBS" {% if branch=='CSBS' %}selected{% endif %}>
+        Computer Science and Business Systems
+    </option>
+    <option value="CMPS" {% if branch=='CMPS' %}selected{% endif %}>
+        Computer Science and Mathematical Sciences
+    </option>
+    <option value="CSD" {% if branch=='CSD' %}selected{% endif %}>
+        Computer Science and Design
+    </option>
+</optgroup>
+
+<!-- Electronics & Electrical -->
+<optgroup label="Electronics & Electrical">
+    <option value="EC" {% if branch=='EC' %}selected{% endif %}>
+        Electronics and Communication Engineering
+    </option>
+    <option value="ECACT" {% if branch=='ECACT' %}selected{% endif %}>
+        Electronics and Communication (Advanced Communication Technology)
+    </option>
+    <option value="EE" {% if branch=='EE' %}selected{% endif %}>
+        Electrical Engineering
+    </option>
+    <option value="ELECT ELEX" {% if branch=='ELECT ELEX' %}selected{% endif %}>
+        Electrical and Electronics Engineering
+    </option>
+    <option value="EEIOT" {% if branch=='EEIOT' %}selected{% endif %}>
+        Electrical Engineering with Internet of Things
+    </option>
+    <option value="EI" {% if branch=='EI' %}selected{% endif %}>
+        Electronics and Instrumentation Engineering
+    </option>
+    <option value="ET" {% if branch=='ET' %}selected{% endif %}>
+        Electronics and Telecommunication Engineering
+    </option>
+    <option value="EL" {% if branch=='EL' %}selected{% endif %}>
+        Electronics Engineering
+    </option>
+    <option value="ECS" {% if branch=='ECS' %}selected{% endif %}>
+        Electronics and Computer Science
+    </option>
+    <option value="INOT" {% if branch=='INOT' %}selected{% endif %}>
+        Instrumentation and Internet of Things
+    </option>
+</optgroup>
+
+<!-- Core Engineering -->
+<optgroup label="Core Engineering">
+    <option value="MECH" {% if branch=='MECH' %}selected{% endif %}>
+        Mechanical Engineering
+    </option>
+    <option value="CIVIL" {% if branch=='CIVIL' %}selected{% endif %}>
+        Civil Engineering
+    </option>
+    <option value="CHEM" {% if branch=='CHEM' %}selected{% endif %}>
+        Chemical Engineering
+    </option>
+    <option value="IP" {% if branch=='IP' %}selected{% endif %}>
+        Industrial Production Engineering
+    </option>
+    <option value="MTENG" {% if branch=='MTENG' %}selected{% endif %}>
+        Metallurgical Engineering
+    </option>
+    <option value="MMP" {% if branch=='MMP' %}selected{% endif %}>
+        Metallurgy and Materials Processing
+    </option>
+    <option value="MINING" {% if branch=='MINING' %}selected{% endif %}>
+        Mining Engineering
+    </option>
+    <option value="AGE" {% if branch=='AGE' %}selected{% endif %}>
+        Agricultural Engineering
+    </option>
+    <option value="EV" {% if branch=='EV' %}selected{% endif %}>
+        Environmental Engineering
+    </option>
+</optgroup>
+
+<!-- Automobile & Robotics -->
+<optgroup label="Automobile & Robotics">
+    <option value="AUTO" {% if branch=='AUTO' %}selected{% endif %}>
+        Automobile Engineering
+    </option>
+    <option value="ARE" {% if branch=='ARE' %}selected{% endif %}>
+        Automobile and Robotics Engineering
+    </option>
+    <option value="AIR" {% if branch=='AIR' %}selected{% endif %}>
+        Artificial Intelligence and Robotics
+    </option>
+</optgroup>
+
+<!-- Specialized Programs -->
+<optgroup label="Specialized Programs">
+    <option value="BM" {% if branch=='BM' %}selected{% endif %}>
+        Biomedical Engineering
+    </option>
+    <option value="FTS" {% if branch=='FTS' %}selected{% endif %}>
+        Food Technology and Science
+    </option>
+    <option value="PCT" {% if branch=='PCT' %}selected{% endif %}>
+        Petrochemical Technology
+    </option>
+</optgroup>
+
+<!-- Emerging IT Programs -->
+<optgroup label="Emerging IT Programs">
+    <option value="ITAIAR" {% if branch=='ITAIAR' %}selected{% endif %}>
+        Information Technology with AI and Augmented Reality
+    </option>
+    <option value="ITIOT" {% if branch=='ITIOT' %}selected{% endif %}>
+        Information Technology with Internet of Things
+    </option>
+    <option value="AIAIDS" {% if branch=='AIAIDS' %}selected{% endif %}>
+        Artificial Intelligence and Applied Data Science
+    </option>
+</optgroup>

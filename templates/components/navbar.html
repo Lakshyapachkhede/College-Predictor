@@ -1,16 +1,35 @@
-<nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">College Predictor</a>
+<!-- <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">College Predictor</a>
 
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/predictor">Predictor</a></li>
-                {% if data %}
-                <li><a href="#results">Results</a></li>
-                {% endif %}
-                <li><a href="/search">Search</a></li>
-                <li><a href="/rank_predictor">Rank</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </div>
-    </nav>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/predictor">Predictor</a></li>
+            {% if data %}
+            <li><a href="#results">Results</a></li>
+            {% endif %}
+            <li><a href="/search">Search</a></li>
+            <li><a href="/rank_predictor">Rank</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </div>
+</nav> -->
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">College Predictor</a>
+
+        <ul class="nav-links">
+            <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+            <li><a href="/predictor" class="{% if request.path == '/predictor' %}active{% endif %}">Predictor</a></li>
+
+            {% if data %}
+            <li><a href="#results">Results</a></li>
+            {% endif %}
+
+            <li><a href="/search" class="{% if request.path == '/search' %}active{% endif %}">Search</a></li>
+            <li><a href="/rank_predictor" class="{% if request.path == '/rank_predictor' %}active{% endif %}">Rank</a></li>
+            <li><a href="/about" class="{% if request.path == '/about' %}active{% endif %}">About</a></li>
+        </ul>
+    </div>
+</nav>

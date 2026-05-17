@@ -235,17 +235,18 @@ tr:hover {
 }
 
 .nav-links a {
+    position: relative;
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    transition: 0.2s ease;
-    position: relative;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
     color: #007bff;
 }
 
+/* Underline effect (used for hover + active page) */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -257,7 +258,17 @@ tr:hover {
     transition: width 0.25s ease;
 }
 
+/* Show underline on hover */
 .nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Keep underline visible for current page */
+.nav-links a.active {
+    color: #007bff;
+}
+
+.nav-links a.active::after {
     width: 100%;
 }
 
@@ -717,3 +728,5 @@ tr:hover {
 .link:hover{
     text-decoration: underline;
 }
+
+

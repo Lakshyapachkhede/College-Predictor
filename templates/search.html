@@ -45,11 +45,7 @@
             </select>
 
             <!-- Branch -->
-            <select name="branch" class="filter-select">
-                <option value="">All Branches</option>
-                {% include 'components/branch_options.html' %}
 
-            </select>
 
             <!-- Year -->
             <select name="year" class="filter-select">
@@ -58,6 +54,19 @@
                 <option value="2024" {% if data and data.year=='2024' %}selected{% endif %}>2024</option>
             </select>
 
+            {% set selected_branches = data.branches if data and data.branches else [] %}
+
+
+        </div>
+
+        <div class="form-group">
+            <label>Preferred Branches</label>
+
+            <div class="checkbox-grid">
+                {% include 'components/branch_options.html' %}
+
+
+            </div>
         </div>
 
 

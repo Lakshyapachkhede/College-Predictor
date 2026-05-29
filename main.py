@@ -5,7 +5,7 @@ from predictor import fetch_cgpa_to_rank_map, fetch_colleges_from_rank, estimate
 
 app = Flask(__name__)
 
-# Use existing SQLite database file
+
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
@@ -21,7 +21,7 @@ def fetch_rank_maps_cache():
         RANK_MAPS_CACHE[year] = fetch_cgpa_to_rank_map(year)
 
     
-def get_colleges(cgpa, branch, category, gender, college_type):
+def get_colleges(cgpa, branches, category, gender, college_type):
 
     result = {}
 
@@ -39,7 +39,7 @@ def get_colleges(cgpa, branch, category, gender, college_type):
         colleges = fetch_colleges_from_rank(
             min_rank,
             max_rank,
-            branch,
+            branches,
             category,
             gender,
             college_type,
@@ -95,7 +95,7 @@ def about():
 @app.route('/predictor', methods=['GET', 'POST'])
 def predictor():
 
-    # Show form on GET request
+    
     if request.method == 'GET':
         return render_template(
             'predictor.html',
@@ -110,7 +110,7 @@ def predictor():
     category = request.form.get('category')
     gender = request.form.get('gender')
     college_type = request.form.get('college_type')
-    branch = request.form.get('branch')
+    branches = request.form.getlist('branch')
 
     # Store user data
     form_data = {
@@ -118,12 +118,12 @@ def predictor():
         'category': category,
         'gender': gender,
         'college_type': college_type,
-        'branch': branch
+        'branch': branches
     }
 
 
 
-    predection = get_colleges(cgpa, branch, category, gender, college_type)
+    predection = get_colleges(cgpa, branches, category, gender, college_type)
  
 
 
@@ -134,7 +134,7 @@ def predictor():
     )
 
 
-# routes.py
+
 
 @app.route("/search")
 def search():
@@ -144,7 +144,7 @@ def search():
     category = request.args.get("category", "").strip()
     gender = request.args.get("gender", "").strip()
     college_type = request.args.get("college_type", "").strip()
-    branch = request.args.get("branch", "").strip()
+    branches = request.args.getlist('branch')
     year = request.args.get("year", "").strip()
 
     # If no search query, show empty page
@@ -161,7 +161,7 @@ def search():
         "category": category,
         "gender": gender,
         "college_type": college_type,
-        "branch": branch,
+        "branches": branches,
         "year": year,
     }
 
@@ -171,7 +171,7 @@ def search():
         category=category or None,
         gender=gender or None,
         college_type=college_type or None,
-        branch=branch or None,
+        branches=branches or None,
         year=year or None,
     )
 
@@ -195,4 +195,4 @@ def rank():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host="10.30.140.37", port=80)

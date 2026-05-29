@@ -56,7 +56,7 @@ def estimate_rank_range(cgpa_to_rank_map, cgpa):
 def fetch_colleges_from_rank(
     rank_min,
     rank_max,  
-    branch,
+    branches,
     category,
     gender,
     college_type,
@@ -75,7 +75,7 @@ def fetch_colleges_from_rank(
     query = SeatInfo.query.filter(
         SeatInfo.year == year,
         SeatInfo.closing_rank >= rank_min,
-        SeatInfo.branch == branch,
+        SeatInfo.branch.in_(branches),
         SeatInfo.category == category,
         SeatInfo.gender.in_([gender, "OP"])
     )
@@ -126,7 +126,7 @@ def search_colleges(
     category=None,
     gender=None,
     college_type=None,
-    branch=None,
+    branches=None,
     year=None
 ):
     query = SeatInfo.query
@@ -151,8 +151,8 @@ def search_colleges(
     if college_type:
         query = query.filter(SeatInfo.college_type == college_type)
 
-    if branch:
-        query = query.filter(SeatInfo.branch == branch)
+    if branches:
+        query = query.filter(SeatInfo.branch.in_(branches))
 
     if year:
         query = query.filter(SeatInfo.year == int(year))

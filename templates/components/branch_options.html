@@ -1,183 +1,278 @@
-<!-- Most Popular / Highest Demand -->
-<optgroup label="Most Popular">
-    <option value="CSE" {% if branch=='CSE' %}selected{% endif %}>
-        Computer Science Engineering (CSE)
-    </option>
-    <option value="IT" {% if branch=='IT' %}selected{% endif %}>
-        Information Technology (IT)
-    </option>
-    <option value="AIML" {% if branch=='AIML' %}selected{% endif %}>
-        Artificial Intelligence & Machine Learning
-    </option>
-    <option value="AIADS" {% if branch=='AIADS' %}selected{% endif %}>
-        Artificial Intelligence and Data Science
-    </option>
-    <option value="DS" {% if branch=='DS' %}selected{% endif %}>
-        Data Science
-    </option>
-    <option value="CSEAI" {% if branch=='CSEAI' %}selected{% endif %}>
-        Computer Science and Artificial Intelligence
-    </option>
-    <option value="CSEIML" {% if branch=='CSEIML' %}selected{% endif %}>
-        Computer Science and Artificial Intelligence & Machine Learning
-    </option>
-    <option value="CSEDS" {% if branch=='CSEDS' %}selected{% endif %}>
-        Computer Science and Data Science
-    </option>
-    <option value="CSEAIADS" {% if branch=='CSEAIADS' %}selected{% endif %}>
-        Computer Science with AI and Data Science
-    </option>
-    <option value="CSEML" {% if branch=='CSEML' %}selected{% endif %}>
-        Computer Science and Machine Learning
-    </option>
-    <option value="AI" {% if branch=='AI' %}selected{% endif %}>
-        Artificial Intelligence
-    </option>
-    <option value="MAC" {% if branch=='MAC' %}selected{% endif %}>
-        Mathematics and Computing
-    </option>
-</optgroup>
 
-<!-- Popular Computer Science Specializations -->
-<optgroup label="CS Specializations">
-    <option value="CSEAI" {% if branch=='CSEAI' %}selected{% endif %}>
-        Computer Science and Artificial Intelligence
-    </option>
-    <option value="CSEDS" {% if branch=='CSEDS' %}selected{% endif %}>
-        Computer Science and Data Science
-    </option>
-    <option value="CSECS" {% if branch=='CSECS' %}selected{% endif %}>
-        Computer Science and Cyber Security
-    </option>
-    <option value="CSEIML" {% if branch=='CSEIML' %}selected{% endif %}>
-        Computer Science and Artificial Intelligence & Machine Learning
-    </option>
-    <option value="CSEIL" {% if branch=='CSEIL' %}selected{% endif %}>
-        Computer Science and Information Technology
-    </option>
-    <option value="CSEIOT" {% if branch=='CSEIOT' %}selected{% endif %}>
-        Computer Science and Internet of Things
-    </option>
-    <option value="CSEITCS" {% if branch=='CSEITCS' %}selected{% endif %}>
-        Computer Science and Information Technology with Cyber Security
-    </option>
-    <option value="CSERC" {% if branch=='CSERC' %}selected{% endif %}>
-        Computer Science and Robotics & Cybernetics
-    </option>
-    <option value="CSEBC" {% if branch=='CSEBC' %}selected{% endif %}>
-        Computer Science and Block Chain
-    </option>
-    <option value="CSBS" {% if branch=='CSBS' %}selected{% endif %}>
-        Computer Science and Business Systems
-    </option>
-    <option value="CMPS" {% if branch=='CMPS' %}selected{% endif %}>
-        Computer Science and Mathematical Sciences
-    </option>
-    <option value="CSD" {% if branch=='CSD' %}selected{% endif %}>
-        Computer Science and Design
-    </option>
-</optgroup>
 
-<!-- Electronics & Electrical -->
-<optgroup label="Electronics & Electrical">
-    <option value="EC" {% if branch=='EC' %}selected{% endif %}>
-        Electronics and Communication Engineering
-    </option>
-    <option value="ECACT" {% if branch=='ECACT' %}selected{% endif %}>
-        Electronics and Communication (Advanced Communication Technology)
-    </option>
-    <option value="EE" {% if branch=='EE' %}selected{% endif %}>
-        Electrical Engineering
-    </option>
-    <option value="ELECT ELEX" {% if branch=='ELECT ELEX' %}selected{% endif %}>
-        Electrical and Electronics Engineering
-    </option>
-    <option value="EEIOT" {% if branch=='EEIOT' %}selected{% endif %}>
-        Electrical Engineering with Internet of Things
-    </option>
-    <option value="EI" {% if branch=='EI' %}selected{% endif %}>
-        Electronics and Instrumentation Engineering
-    </option>
-    <option value="ET" {% if branch=='ET' %}selected{% endif %}>
-        Electronics and Telecommunication Engineering
-    </option>
-    <option value="EL" {% if branch=='EL' %}selected{% endif %}>
-        Electronics Engineering
-    </option>
-    <option value="ECS" {% if branch=='ECS' %}selected{% endif %}>
-        Electronics and Computer Science
-    </option>
-    <option value="INOT" {% if branch=='INOT' %}selected{% endif %}>
-        Instrumentation and Internet of Things
-    </option>
-</optgroup>
+        <!-- Most Popular / Highest Demand -->
+        <div class="checkbox-group">
+            <details>
 
-<!-- Core Engineering -->
-<optgroup label="Core Engineering">
-    <option value="MECH" {% if branch=='MECH' %}selected{% endif %}>
-        Mechanical Engineering
-    </option>
-    <option value="CIVIL" {% if branch=='CIVIL' %}selected{% endif %}>
-        Civil Engineering
-    </option>
-    <option value="CHEM" {% if branch=='CHEM' %}selected{% endif %}>
-        Chemical Engineering
-    </option>
-    <option value="IP" {% if branch=='IP' %}selected{% endif %}>
-        Industrial Production Engineering
-    </option>
-    <option value="MTENG" {% if branch=='MTENG' %}selected{% endif %}>
-        Metallurgical Engineering
-    </option>
-    <option value="MMP" {% if branch=='MMP' %}selected{% endif %}>
-        Metallurgy and Materials Processing
-    </option>
-    <option value="MINING" {% if branch=='MINING' %}selected{% endif %}>
-        Mining Engineering
-    </option>
-    <option value="AGE" {% if branch=='AGE' %}selected{% endif %}>
-        Agricultural Engineering
-    </option>
-    <option value="EV" {% if branch=='EV' %}selected{% endif %}>
-        Environmental Engineering
-    </option>
-</optgroup>
+            <summary>Most Popular ▼</summary>
 
-<!-- Automobile & Robotics -->
-<optgroup label="Automobile & Robotics">
-    <option value="AUTO" {% if branch=='AUTO' %}selected{% endif %}>
-        Automobile Engineering
-    </option>
-    <option value="ARE" {% if branch=='ARE' %}selected{% endif %}>
-        Automobile and Robotics Engineering
-    </option>
-    <option value="AIR" {% if branch=='AIR' %}selected{% endif %}>
-        Artificial Intelligence and Robotics
-    </option>
-</optgroup>
+            <label><input type="checkbox" name="branch" value="CSE"
+                {% if 'CSE' in selected_branches %}checked{% endif %}>
+                Computer Science Engineering (CSE)</label>
 
-<!-- Specialized Programs -->
-<optgroup label="Specialized Programs">
-    <option value="BM" {% if branch=='BM' %}selected{% endif %}>
-        Biomedical Engineering
-    </option>
-    <option value="FTS" {% if branch=='FTS' %}selected{% endif %}>
-        Food Technology and Science
-    </option>
-    <option value="PCT" {% if branch=='PCT' %}selected{% endif %}>
-        Petrochemical Technology
-    </option>
-</optgroup>
+            <label><input type="checkbox" name="branch" value="IT"
+                {% if 'IT' in selected_branches %}checked{% endif %}>
+                Information Technology (IT)</label>
 
-<!-- Emerging IT Programs -->
-<optgroup label="Emerging IT Programs">
-    <option value="ITAIAR" {% if branch=='ITAIAR' %}selected{% endif %}>
-        Information Technology with AI and Augmented Reality
-    </option>
-    <option value="ITIOT" {% if branch=='ITIOT' %}selected{% endif %}>
-        Information Technology with Internet of Things
-    </option>
-    <option value="AIAIDS" {% if branch=='AIAIDS' %}selected{% endif %}>
-        Artificial Intelligence and Applied Data Science
-    </option>
-</optgroup>
+            <label><input type="checkbox" name="branch" value="AIML"
+                {% if 'AIML' in selected_branches %}checked{% endif %}>
+                Artificial Intelligence & Machine Learning</label>
+
+            <label><input type="checkbox" name="branch" value="AIADS"
+                {% if 'AIADS' in selected_branches %}checked{% endif %}>
+                Artificial Intelligence and Data Science</label>
+
+            <label><input type="checkbox" name="branch" value="DS"
+                {% if 'DS' in selected_branches %}checked{% endif %}>
+                Data Science</label>
+
+            <label><input type="checkbox" name="branch" value="CSEAI"
+                {% if 'CSEAI' in selected_branches %}checked{% endif %}>
+                Computer Science and Artificial Intelligence</label>
+
+            <label><input type="checkbox" name="branch" value="CSEIML"
+                {% if 'CSEIML' in selected_branches %}checked{% endif %}>
+                Computer Science and Artificial Intelligence & Machine Learning</label>
+
+            <label><input type="checkbox" name="branch" value="CSEDS"
+                {% if 'CSEDS' in selected_branches %}checked{% endif %}>
+                Computer Science and Data Science</label>
+
+            <label><input type="checkbox" name="branch" value="CSEAIADS"
+                {% if 'CSEAIADS' in selected_branches %}checked{% endif %}>
+                Computer Science with AI and Data Science</label>
+
+            <label><input type="checkbox" name="branch" value="CSEML"
+                {% if 'CSEML' in selected_branches %}checked{% endif %}>
+                Computer Science and Machine Learning</label>
+
+            <label><input type="checkbox" name="branch" value="AI"
+                {% if 'AI' in selected_branches %}checked{% endif %}>
+                Artificial Intelligence</label>
+
+            <label><input type="checkbox" name="branch" value="MAC"
+                {% if 'MAC' in selected_branches %}checked{% endif %}>
+                Mathematics and Computing</label>
+
+            </details>
+
+        </div>
+
+        <!-- Popular Computer Science Specializations -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>CS Specializations ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="CSEAI"
+                {% if 'CSEAI' in selected_branches %}checked{% endif %}>
+                Computer Science and Artificial Intelligence</label>
+
+            <label><input type="checkbox" name="branch" value="CSEDS"
+                {% if 'CSEDS' in selected_branches %}checked{% endif %}>
+                Computer Science and Data Science</label>
+
+            <label><input type="checkbox" name="branch" value="CSECS"
+                {% if 'CSECS' in selected_branches %}checked{% endif %}>
+                Computer Science and Cyber Security</label>
+
+            <label><input type="checkbox" name="branch" value="CSEIML"
+                {% if 'CSEIML' in selected_branches %}checked{% endif %}>
+                Computer Science and Artificial Intelligence & Machine Learning</label>
+
+            <label><input type="checkbox" name="branch" value="CSEIL"
+                {% if 'CSEIL' in selected_branches %}checked{% endif %}>
+                Computer Science and Information Technology</label>
+
+            <label><input type="checkbox" name="branch" value="CSEIOT"
+                {% if 'CSEIOT' in selected_branches %}checked{% endif %}>
+                Computer Science and Internet of Things</label>
+
+            <label><input type="checkbox" name="branch" value="CSEITCS"
+                {% if 'CSEITCS' in selected_branches %}checked{% endif %}>
+                Computer Science and Information Technology with Cyber Security</label>
+
+            <label><input type="checkbox" name="branch" value="CSERC"
+                {% if 'CSERC' in selected_branches %}checked{% endif %}>
+                Computer Science and Robotics & Cybernetics</label>
+
+            <label><input type="checkbox" name="branch" value="CSEBC"
+                {% if 'CSEBC' in selected_branches %}checked{% endif %}>
+                Computer Science and Block Chain</label>
+
+            <label><input type="checkbox" name="branch" value="CSBS"
+                {% if 'CSBS' in selected_branches %}checked{% endif %}>
+                Computer Science and Business Systems</label>
+
+            <label><input type="checkbox" name="branch" value="CMPS"
+                {% if 'CMPS' in selected_branches %}checked{% endif %}>
+                Computer Science and Mathematical Sciences</label>
+
+            <label><input type="checkbox" name="branch" value="CSD"
+                {% if 'CSD' in selected_branches %}checked{% endif %}>
+                Computer Science and Design</label>
+
+            </details>
+
+        </div>
+
+        <!-- Electronics & Electrical -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>Electronics & Electrical ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="EC"
+                {% if 'EC' in selected_branches %}checked{% endif %}>
+                Electronics and Communication Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="ECACT"
+                {% if 'ECACT' in selected_branches %}checked{% endif %}>
+                Electronics and Communication (Advanced Communication Technology)</label>
+
+            <label><input type="checkbox" name="branch" value="EE"
+                {% if 'EE' in selected_branches %}checked{% endif %}>
+                Electrical Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="ELECT ELEX"
+                {% if 'ELECT ELEX' in selected_branches %}checked{% endif %}>
+                Electrical and Electronics Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="EEIOT"
+                {% if 'EEIOT' in selected_branches %}checked{% endif %}>
+                Electrical Engineering with Internet of Things</label>
+
+            <label><input type="checkbox" name="branch" value="EI"
+                {% if 'EI' in selected_branches %}checked{% endif %}>
+                Electronics and Instrumentation Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="ET"
+                {% if 'ET' in selected_branches %}checked{% endif %}>
+                Electronics and Telecommunication Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="EL"
+                {% if 'EL' in selected_branches %}checked{% endif %}>
+                Electronics Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="ECS"
+                {% if 'ECS' in selected_branches %}checked{% endif %}>
+                Electronics and Computer Science</label>
+
+            <label><input type="checkbox" name="branch" value="INOT"
+                {% if 'INOT' in selected_branches %}checked{% endif %}>
+                Instrumentation and Internet of Things</label>
+
+            </details>
+
+        </div>
+
+        <!-- Core Engineering -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>Core Engineering ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="MECH"
+                {% if 'MECH' in selected_branches %}checked{% endif %}>
+                Mechanical Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="CIVIL"
+                {% if 'CIVIL' in selected_branches %}checked{% endif %}>
+                Civil Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="CHEM"
+                {% if 'CHEM' in selected_branches %}checked{% endif %}>
+                Chemical Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="IP"
+                {% if 'IP' in selected_branches %}checked{% endif %}>
+                Industrial Production Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="MTENG"
+                {% if 'MTENG' in selected_branches %}checked{% endif %}>
+                Metallurgical Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="MMP"
+                {% if 'MMP' in selected_branches %}checked{% endif %}>
+                Metallurgy and Materials Processing</label>
+
+            <label><input type="checkbox" name="branch" value="MINING"
+                {% if 'MINING' in selected_branches %}checked{% endif %}>
+                Mining Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="AGE"
+                {% if 'AGE' in selected_branches %}checked{% endif %}>
+                Agricultural Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="EV"
+                {% if 'EV' in selected_branches %}checked{% endif %}>
+                Environmental Engineering</label>
+
+            </details>
+
+        </div>
+
+        <!-- Automobile & Robotics -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>Automobile & Robotics ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="AUTO"
+                {% if 'AUTO' in selected_branches %}checked{% endif %}>
+                Automobile Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="ARE"
+                {% if 'ARE' in selected_branches %}checked{% endif %}>
+                Automobile and Robotics Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="AIR"
+                {% if 'AIR' in selected_branches %}checked{% endif %}>
+                Artificial Intelligence and Robotics</label>
+
+            </details>
+
+        </div>
+
+        <!-- Specialized Programs -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>Specialized Programs ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="BM"
+                {% if 'BM' in selected_branches %}checked{% endif %}>
+                Biomedical Engineering</label>
+
+            <label><input type="checkbox" name="branch" value="FTS"
+                {% if 'FTS' in selected_branches %}checked{% endif %}>
+                Food Technology and Science</label>
+
+            <label><input type="checkbox" name="branch" value="PCT"
+                {% if 'PCT' in selected_branches %}checked{% endif %}>
+                Petrochemical Technology</label>
+            </details>
+
+        </div>
+
+        <!-- Emerging IT Programs -->
+        <div class="checkbox-group">
+            <details>
+
+            <summary>Emerging IT Programs ▼</summary>
+
+            <label><input type="checkbox" name="branch" value="ITAIAR"
+                {% if 'ITAIAR' in selected_branches %}checked{% endif %}>
+                Information Technology with AI and Augmented Reality</label>
+
+            <label><input type="checkbox" name="branch" value="ITIOT"
+                {% if 'ITIOT' in selected_branches %}checked{% endif %}>
+                Information Technology with Internet of Things</label>
+
+            <label><input type="checkbox" name="branch" value="AIAIDS"
+                {% if 'AIAIDS' in selected_branches %}checked{% endif %}>
+                Artificial Intelligence and Applied Data Science</label>
+            </details>
+
+        </div>
+

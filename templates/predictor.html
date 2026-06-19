@@ -93,7 +93,7 @@
         <p><strong>Branch:</strong> 
             {% for branch in selected_branches %}
 
-                {{ branch }},
+                {{ branch|branch_name }}<strong>,</strong>
 
             {% endfor %}
         </p>
@@ -128,7 +128,7 @@
 
                     <td>{{ college.college_name }}</td>
                     <td>{{ college.college_type }}</td>
-                    <td>{{ college.branch }}</td>
+                    <td>{{ college.branch|branch_name }}</td>
                     <td>{{ college.opening_rank }}</td>
                     <td>{{ college.closing_rank }}</td>
                     <td>{{ college.domicile }}</td>
@@ -150,6 +150,8 @@
 
 
 </div>
+
+
 {% endif %}
 
 

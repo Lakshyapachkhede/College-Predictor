@@ -12,6 +12,61 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db.init_app(app)
 
 
+BRANCHES = {
+    # Computer Science & IT
+    "CSE": "Computer Science and Engineering",
+    "IT": "Information Technology",
+    "CSBS": "Computer Science and Business Systems",
+    "CSD": "Computer Science and Design",
+    "MAC": "Mathematics and Computing",
+    "IOT": "Internet of Things",
+    "CSEIL": "Computer Science & Engineering (Hindi Medium)",
+
+    # AI, Data Science & Cyber Security
+    "AI": "Artificial Intelligence",
+    "AIML": "Artificial Intelligence & Machine Learning",
+    "AIADS": "Artificial Intelligence and Data Science",
+    "CSEDS": "Computer Science and Engineering (Data Science)",
+    "CSECS": "Computer Science and Engineering (Cyber Security)",
+    "CSEBC": "Computer Science and Engineering (Blockchain)",
+    "ITAIAR": "Information Technology (Artificial Intelligence & Robotics)",
+
+    # Electronics & Electrical
+    "EC": "Electronics and Communication Engineering",
+    "ECACT": "Electronics and Communication (Advanced Communication Technology)",
+    "EE": "Electrical Engineering",
+    "ELECT ELEX": "Electrical & Electronics Engineering",
+    "EEIOT": "Electrical Engineering (Internet of Things)",
+    "EI": "Electronics and Instrumentation Engineering",
+    "EL": "Electronics Engineering",
+    "ET": "Electronics and Telecommunication Engineering",
+    "ECS": "Electronics and Computer Science",
+
+    # Mechanical, Automobile & Robotics
+    "MECH": "Mechanical Engineering",
+    "AUTO": "Automobile Engineering",
+    "ARE": "Automation and Robotics",
+    "AIR": "Robotics and Artificial Intelligence",
+    "MTENG": "Mechatronics Engineering",
+    "EV": "Electric Vehicles",
+
+    # Civil, Chemical & Production
+    "CIVIL": "Civil Engineering",
+    "CHEM": "Chemical Engineering",
+    "IP": "Industrial & Production Engineering",
+    "AGE": "Agricultural Engineering",
+
+    # Mining
+    "MINING": "Mining Engineering",
+    "MMP": "Mining and Mineral Processing",
+
+    # Specialized Programs
+    "BM": "Biomedical Engineering",
+    "PCT": "Petrochemical Technology",
+    "FTS": "Fire Technology & Safety",
+}
+
+
 
 RANK_MAPS_CACHE = {}
 YEARS = [2025, 2024]
@@ -201,6 +256,11 @@ def home():
 def about():
     return render_template('about.html')
 
+@app.template_filter("branch_name")
+def branch_name(code):
+    return BRANCHES.get(code, code)
+
     
+
 if __name__ == '__main__':
     app.run(debug=True, port=80)

@@ -272,8 +272,8 @@ def robots():
 def sitemap():
     return send_from_directory("static", "sitemap.xml")
 
-@app.route('/google3bf79a468e1ed3d9.html', methods=['GET'])
-def about():
+@app.route('/google3bf79a468e1ed3d9.html')
+def google():
     return send_from_directory("static", "google3bf79a468e1ed3d9.html")
 
 

@@ -4,6 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Predict your best MP B.Tech Lateral Entry college based on your diploma percentage. Compare government and private engineering colleges in Madhya Pradesh using previous year's cutoff data and get accurate admission predictions.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pachkhedelakshya.pythonanywhere.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MP B.Tech Lateral Entry College Predictor">
+    <meta property="og:description"
+        content="Predict your best MP B.Tech Lateral Entry college using your diploma percentage. Compare government and private engineering colleges in Madhya Pradesh based on previous year's cutoff data.">
+    <meta property="og:url" content="https://pachkhedelakshya.pythonanywhere.com/">
+    <meta property="og:site_name" content="MP B.Tech Lateral Entry College Predictor">
+
+    <!-- Replace with your actual image -->
+    <meta property="og:image" content="https://pachkhedelakshya.pythonanywhere.com/static/img/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MP B.Tech Lateral Entry College Predictor">
+    <meta name="twitter:description"
+        content="Predict your best MP B.Tech Lateral Entry college using your diploma percentage and previous year's cutoff data.">
+    <meta name="twitter:image" content="https://pachkhedelakshya.pythonanywhere.com/static/img/og-image.png">
+
+
+
     <title>{% block title %}MP BTech Lateral Entry College Predictor{% endblock %}</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
@@ -11,13 +38,29 @@
 
 <body>
     {% include 'components/navbar.html' %}
-    
+
     {% block content %}{% endblock %}
 
     <footer id="footer">
         <p>Lakshya Pachkhede</p>
     </footer>
 
+
+        <!-- Structured Data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MP B.Tech Lateral Entry College Predictor",
+  "url": "https://pachkhedelakshya.pythonanywhere.com/",
+  "description": "Predict MP B.Tech Lateral Entry colleges using diploma percentage and previous year's cutoff data.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Lakshya Pachkhede"
+  },
+  "inLanguage": "en-IN"
+}
+</script>
 </body>
 
 </html>

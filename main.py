@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 from db import db
 from predictor import fetch_cgpa_to_rank_map, fetch_colleges_from_rank, estimate_rank_range, search_colleges
 
@@ -261,6 +261,16 @@ def branch_name(code):
     return BRANCHES.get(code, code)
 
     
+
+
+@app.route("/robots.txt")
+def robots():
+    return send_from_directory("static", "robots.txt")
+
+@app.route("/sitemap.xml")
+def sitemap():
+    return send_from_directory("static", "sitemap.xml")
+
 
 if __name__ == '__main__':
     app.run(debug=True, host="10.141.121.37", port=80)

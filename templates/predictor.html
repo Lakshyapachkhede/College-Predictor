@@ -74,6 +74,10 @@
 
         <!-- Submit Button -->
         <button type="submit">Predict Colleges</button>
+        {% if data %}
+            <button id="downloadPDF">Download PDF</button>
+        {% endif %}
+
     </form>
 </div>
 {% if data %}
@@ -85,7 +89,7 @@
     </p>
 
     <!-- User Input Summary -->
-    <div class="summary-box">
+    <div class="summary-box" id="summary-box">
         <p><strong>CGPA:</strong> {{ data.cgpa }}</p>
         <p><strong>Category:</strong> {{ data.category }}</p>
         <p><strong>Gender:</strong> {{ data.gender }}</p>
@@ -103,12 +107,12 @@
     <h2>Year {{year}}</h2>
 
 
-    <div class="prediction-box">
+    <div class="prediction-box" id="prediction_{{ year }}">
         {{ data.prediction }}
     </div>
 
     <div class="table-wrapper">
-        <table>
+        <table id="table_{{ year }}">
             <thead>
                 <tr>
 
@@ -151,7 +155,305 @@
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 
+<script>
+document.getElementById("downloadPDF").addEventListener("click", (e)=>{
+    e.preventDefault();
+    generatePDF();
+}
+
+);
+
+function generatePDF() {
+
+    const { jsPDF } = window.jspdf;
+
+    const doc = new jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4"
+    });
+
+    const pageWidth = doc.internal.pageSize.getWidth();
+
+    //----------------------------------------------------
+    // Title
+    //----------------------------------------------------
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(18);
+    doc.text("MP BTech Lateral Entry College Predictor", pageWidth / 2, 18, {
+        align: "center"
+    });
+
+    doc.setDrawColor(0);
+    doc.line(15, 24, pageWidth - 15, 24);
+
+    //----------------------------------------------------
+    // Summary Box
+    //----------------------------------------------------
+
+    const summary = document.querySelector("#summary-box");
+
+    let summaryData = [];
+
+    summary.querySelectorAll("p").forEach(p => {
+
+        let strong = p.querySelector("strong");
+
+        if (!strong) return;
+
+        let key = strong.innerText.replace(":", "").trim();
+
+        let value = p.textContent.replace(strong.textContent, "").replace(/\s+/g, " ").trim();
+
+        summaryData.push([key, value]);
+    });
+
+    doc.setFontSize(13);
+    doc.setFont("helvetica", "bold");
+    doc.text("Prediction Criteria", 14, 34);
+
+    doc.autoTable({
+
+        startY: 38,
+
+        head: [],
+
+        body: summaryData,
+
+        theme: "grid",
+
+        styles: {
+
+            font: "helvetica",
+            fontSize: 10,
+            textColor: 0,
+            lineColor: 0,
+            lineWidth: 0.2
+        },
+
+        columnStyles: {
+            0: {
+                fontStyle: "bold",
+                cellWidth: 45
+            }
+        },
+
+        margin: {
+            left: 14,
+            right: 14
+        }
+    });
+
+    //----------------------------------------------------
+    // Each Year
+    //----------------------------------------------------
+
+    const headings = document.querySelectorAll("#results h2");
+
+    headings.forEach((heading, index) => {
+
+        let year = heading.innerText.trim();
+
+        let predictionBox = heading.nextElementSibling;
+
+        let tableWrapper = predictionBox.nextElementSibling;
+
+        let table = tableWrapper.querySelector("table");
+
+        let startY = doc.lastAutoTable.finalY + 12;
+
+        //------------------------------------------------
+        // Page Break
+        //------------------------------------------------
+
+        if (startY > 240) {
+
+            doc.addPage();
+            startY = 20;
+        }
+
+        //------------------------------------------------
+        // Year Heading
+        //------------------------------------------------
+
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(15);
+
+        doc.text(year, 14, startY);
+
+        doc.setDrawColor(0);
+        doc.line(14, startY + 2, pageWidth - 14, startY + 2);
+
+        //------------------------------------------------
+        // Prediction
+        //------------------------------------------------
+
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(11);
+
+        doc.text(
+            predictionBox.innerText.trim(),
+            14,
+            startY + 10
+        );
+
+        //------------------------------------------------
+        // Extract Table
+        //------------------------------------------------
+
+        const headers = [];
+
+        table.querySelectorAll("thead th").forEach(th => {
+            headers.push(th.innerText.trim());
+        });
+
+        const rows = [];
+
+        table.querySelectorAll("tbody tr").forEach(tr => {
+
+            const row = [];
+
+            tr.querySelectorAll("td").forEach(td => {
+
+                row.push(td.innerText.trim());
+
+            });
+
+            rows.push(row);
+        });
+
+        //------------------------------------------------
+        // Table
+        //------------------------------------------------
+
+        doc.autoTable({
+
+            head: [headers],
+
+            body: rows,
+
+            startY: startY + 16,
+
+            theme: "grid",
+
+            headStyles: {
+
+                fillColor: [255, 255, 255],
+                textColor: 0,
+                lineColor: 0,
+                lineWidth: 0.3,
+                fontStyle: "bold"
+            },
+
+            styles: {
+
+                font: "helvetica",
+                fontSize: 8,
+
+                textColor: 0,
+
+                lineColor: 0,
+
+                lineWidth: 0.2,
+
+                overflow: "linebreak",
+
+                cellPadding: 2
+            },
+
+            alternateRowStyles: {
+
+                fillColor: [255, 255, 255]
+            },
+
+            margin: {
+                left: 14,
+                right: 14
+            }
+        });
+    });
+
+    //----------------------------------------------------
+    // Footer (Page Number)
+    //----------------------------------------------------
+
+    const pages = doc.internal.getNumberOfPages();
+
+    for (let i = 1; i <= pages; i++) {
+
+        doc.setPage(i);
+
+        doc.setFontSize(9);
+
+        doc.setTextColor(0);
+
+        doc.text(
+            `Page ${i} of ${pages}`,
+            pageWidth / 2,
+            290,
+            {
+                align: "center"
+            }
+        );
+    }
+
+    const totalPages = doc.internal.getNumberOfPages();
+
+    // Go to the last page
+    doc.setPage(totalPages);
+
+    const pageHeight = doc.internal.pageSize.getHeight();
+
+
+    let y = pageHeight - 25;
+
+    // Separator line
+    doc.setDrawColor(0);
+    doc.line(15, y, pageWidth - 15, y);
+
+    y += 8;
+
+    // Created by
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(10);
+    doc.text("Lakshya Pachkhede", pageWidth / 2, y, {
+        align: "center"
+    });
+
+    y += 6;
+
+    // Website
+    doc.setFont("helvetica", "normal");
+    doc.setTextColor(0);
+
+    // Display text
+    doc.text(
+        "https://pachkhedelakshya.pythonanywhere.com",
+        pageWidth / 2,
+        y,
+        { align: "center" }
+    );
+
+    // Make it clickable
+    doc.link(
+        pageWidth / 2 - 35,
+        y - 4,
+        70,
+        6,
+        { url: "https://pachkhedelakshya.pythonanywhere.com" }
+    );
+
+    //----------------------------------------------------
+    // Save
+    //----------------------------------------------------
+
+    doc.save("College_Prediction_Report.pdf");
+}
+</script>
 {% endif %}
 
 

@@ -837,3 +837,24 @@ tr:hover {
     align-items: center;
     gap: 2px;
 }
+
+
+/* ================= ANALYSIS PAGE ================= */
+
+.analysis-image{
+    width:100%;
+    max-width:1000px;
+    display:block;
+    margin:30px auto;
+    border-radius:12px;
+    background:#fff;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+@media (max-width:768px){
+
+    .analysis-image{
+        margin:20px auto;
+    }
+
+}

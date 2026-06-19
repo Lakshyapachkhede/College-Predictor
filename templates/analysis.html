@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% block title %}Admission Analysis - MP BTech Lateral Entry Predictor{% endblock %}
+
+{% block content %}
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>CGPA Distribution</h2>
+
+        <p class="section-text">
+            This chart shows how students are distributed across different CGPA
+            ranges. Most students generally fall between 6.5 and 8.0 CGPA.
+        </p>
+
+        <img
+            src="{{ url_for('static', filename='img/cgpa_distribution_2025.png') }}"
+            class="analysis-image"
+            alt="CGPA Distribution">
+
+    </div>
+
+</section>
+
+
+<section class="section alt-bg">
+
+    <div class="container">
+
+        <h2>CGPA Distribution</h2>
+
+        <p class="section-text">
+            This chart shows how students are distributed across different CGPA
+            ranges. Most students generally fall between 6.5 and 8.0 CGPA.
+        </p>
+
+        <img
+            src="{{ url_for('static', filename='img/cgpa_distribution_2024.png') }}"
+            class="analysis-image"
+            alt="CGPA Distribution">
+
+    </div>
+
+</section>
+
+
+
+
+
+<section class="section">
+
+    <div class="container">
+
+        <h2>CGPA vs Rank</h2>
+
+        <p class="section-text">
+
+            A single CGPA can correspond to multiple ranks because many students
+            obtain the same CGPA.
+
+            The shaded region below represents the possible rank range for each CGPA.
+
+        </p>
+
+        <img
+            src="{{ url_for('static', filename='img/rank_range_2025.png') }}"
+            class="analysis-image"
+            alt="CGPA vs Rank">
+
+    </div>
+
+</section>
+
+<section class="section alt-bg">
+
+    <div class="container">
+
+        <h2>CGPA vs Rank</h2>
+
+        <p class="section-text">
+
+            A single CGPA can correspond to multiple ranks because many students
+            obtain the same CGPA.
+
+            The shaded region below represents the possible rank range for each CGPA.
+
+        </p>
+
+        <img
+            src="{{ url_for('static', filename='img/rank_range_2024.png') }}"
+            class="analysis-image"
+            alt="CGPA vs Rank">
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- ================= BRANCH CODES ================= -->
+<section class="section">
+    <div class="container">
+        <h2>Branch Codes</h2>
+
+        <p class="section-text">
+            The following branch codes are used throughout the predictor, search, and filtering
+            system. These abbreviations correspond to the official counselling branch codes.
+        </p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch Code</th>
+                        <th>Branch Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr><td>AGE</td><td>Agricultural Engineering</td></tr>
+                    <tr><td>AI</td><td>Artificial Intelligence</td></tr>
+                    <tr><td>AIADS</td><td>Artificial Intelligence and Data Science</td></tr>
+                    <tr><td>AIML</td><td>Artificial Intelligence and Machine Learning</td></tr>
+                    <tr><td>AIR</td><td>Robotics and Artificial Intelligence</td></tr>
+                    <tr><td>ARE</td><td>Automation and Robotics</td></tr>
+                    <tr><td>AUTO</td><td>Automobile Engineering</td></tr>
+                    <tr><td>BM</td><td>Bio-Medical Engineering</td></tr>
+                    <tr><td>CHEM</td><td>Chemical Engineering</td></tr>
+                    <tr><td>CIVIL</td><td>Civil Engineering</td></tr>
+                    <tr><td>CSBS</td><td>Computer Science and Business System</td></tr>
+                    <tr><td>CSD</td><td>Computer Science and Design</td></tr>
+                    <tr><td>CSE</td><td>Computer Science and Engineering</td></tr>
+                    <tr><td>CSEBC</td><td>Computer Science and Engineering (Block Chain)</td></tr>
+                    <tr><td>CSECS</td><td>Computer Science and Engineering (Cyber Security)</td></tr>
+                    <tr><td>CSEDS</td><td>Computer Science and Engineering (Data Science)</td></tr>
+                    <tr><td>CSEIL</td><td>Computer Science and Engineering - Indian Language (Hindi)</td></tr>
+                    <tr><td>EC</td><td>Electronics and Communication Engineering</td></tr>
+                    <tr><td>ECACT</td><td>Electronics and Communication (Advanced Communication Technology)</td></tr>
+                    <tr><td>ECS</td><td>Electronics and Computer Science</td></tr>
+                    <tr><td>EE</td><td>Electrical Engineering</td></tr>
+                    <tr><td>EEIOT</td><td>Electrical Engineering (Internet of Things)</td></tr>
+                    <tr><td>EI</td><td>Electronics &amp; Instrumentation Engineering</td></tr>
+                    <tr><td>EL</td><td>Electronics Engineering</td></tr>
+                    <tr><td>ELECT ELEX</td><td>Electrical &amp; Electronics Engineering</td></tr>
+                    <tr><td>ET</td><td>Electronics and Telecommunications</td></tr>
+                    <tr><td>EV</td><td>Electric Vehicles</td></tr>
+                    <tr><td>FTS</td><td>Fire Technology &amp; Safety</td></tr>
+                    <tr><td>IOT</td><td>Internet of Things</td></tr>
+                    <tr><td>IP</td><td>Industrial &amp; Production Engineering</td></tr>
+                    <tr><td>IT</td><td>Information Technology</td></tr>
+                    <tr><td>ITAIAR</td><td>Information Technology (Artificial Intelligence and Robotics)</td></tr>
+                    <tr><td>MAC</td><td>Mathematics and Computing</td></tr>
+                    <tr><td>MECH</td><td>Mechanical Engineering</td></tr>
+                    <tr><td>MINING</td><td>Mining Engineering</td></tr>
+                    <tr><td>MMP</td><td>Mining and Mineral Processing</td></tr>
+                    <tr><td>MTENG</td><td>Mechatronics Engineering</td></tr>
+                    <tr><td>PCT</td><td>Petrochemical Technology</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DISCLAIMER ================= -->
+
+<section class="section alt-bg">
+
+    <div class="container">
+
+        <h2>Disclaimer</h2>
+
+        <p class="section-text">
+
+            All analyses shown on this page are generated from publicly available
+            DTE Madhya Pradesh counselling data.
+
+            These statistics are intended only for educational and counselling
+            guidance purposes and should not be considered an official prediction.
+
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}

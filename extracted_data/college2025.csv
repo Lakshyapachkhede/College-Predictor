@@ -13,13 +13,13 @@
 13,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEDS   ,DIPPPT ,2474,2474  , UR/X/F    ,N,1,2025
 14,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEDS   ,DIPPPT ,2535,2575  , OBC/X/M   ,N,2,2025
 15,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIL   ,DIPPPT ,2601,2601  , UR/X/M    ,N,1,2025
-16,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,3194,3194  , OBC/X/F   ,N,1,2025
-17,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,2673 ,4321 , OBC/X/M   ,N,5,2025
-18,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,1073 ,1073 , UR/X/F    ,N,1,2025
-19,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,1327 ,1327 , OBC/X/F   ,N,1,2025
-20,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,1445 ,1445 , OBC/X/M   ,N,1,2025
-21,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,2101 ,2101 , SC/X/M    ,N,1,2025
-22,Acropolis Institute of Technology & Research Indore (2005), Private ,CSEIML  ,DIPPPT ,1701 ,2435 , UR/X/M    ,N,2,2025
+16,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,3194,3194  , OBC/X/F   ,N,1,2025
+17,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,2673 ,4321 , OBC/X/M   ,N,5,2025
+18,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,1073 ,1073 , UR/X/F    ,N,1,2025
+19,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,1327 ,1327 , OBC/X/F   ,N,1,2025
+20,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,1445 ,1445 , OBC/X/M   ,N,1,2025
+21,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,2101 ,2101 , SC/X/M    ,N,1,2025
+22,Acropolis Institute of Technology & Research Indore (2005), Private ,AIML  ,DIPPPT ,1701 ,2435 , UR/X/M    ,N,2,2025
 23,Acropolis Institute of Technology & Research Indore (2005), Private ,IT    ,DIPPPT ,2325,2325  , UR/X/F    ,N,1,2025
 24,Acropolis Institute of Technology & Research Indore (2005), Private ,IT    ,DIPPPT ,2472,4771  , UR/X/M    ,N,4,2025
 25,Acropolis Institute of Technology & Research Indore (2005), Private ,IT      ,DIPPPT ,2522,3729  , OBC/X/F   ,N,2,2025
@@ -30,8 +30,8 @@
 30 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,CIVIL        ,DIPPPT ,2427,2427, OBC/X/F ,N,1,2025
 31 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,CIVIL        ,DIPPPT ,3233,3233, OBC/X/M ,N,1,2025
 32 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,CSE          ,BSC    ,4524,4524, OBC/X/M ,N,1,2025
-33 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,CSEAI        ,DIPPPT , 319, 319, OBC/X/M ,N,1,2025
-34 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,CSEAI        ,DIPPPT ,1106,1106, SC/X/M  ,N,1,2025
+33 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,AIML        ,DIPPPT , 319, 319, OBC/X/M ,N,1,2025
+34 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,AIML        ,DIPPPT ,1106,1106, SC/X/M  ,N,1,2025
 35 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,ELECT ELEX   ,DIPPPT ,1063,1063, OBC/X/M ,N,1,2025
 36 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,ELECT ELEX   ,DIPPPT ,1775,1775, SC/X/M  ,N,1,2025
 37 ,ADINA INSTITUTE OF SCIENCE & TECHNOLOGY SAGAR (2009), Private ,ELECT ELEX   ,DIPPPT ,4343,4343, UR/X/M  ,N,1,2025
@@ -83,15 +83,15 @@
 83 ,Babulal Tarabai Institute of Research & Technology Sagar (2008), Private ,ELECT ELEX ,DIPPPT ,4505,4505, UR/X/M ,N,1,2025
 84 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CIVIL  ,DIPPPT ,3881,3881, OBC/X/M ,N,1 ,2025
 85 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CIVIL  ,DIPPPT ,1227,2476, ST/X/F  ,N,2,2025
-86 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CMPS   ,DIPPPT ,3000,3000, UR/X/M  ,N,1,2025
+86 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE   ,DIPPPT ,3000,3000, UR/X/M  ,N,1,2025
 87 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE    ,DIPPPT ,1465,1465, OBC/X/F ,N,1,2025
 88 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE    ,DIPPPT ,2938,2938, UR/X/M  ,N,1,2025
 89 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE    ,DIPPPT ,1620,3571, UR/X/F  ,N,2,2025
 90 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE    ,DIPPPT ,3779,3779, ST/X/M  ,N,1,2025
 91 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE    ,DIPPPT ,2402,4507, OBC/X/M ,N,5,2025
-92 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSEIML ,BSC    ,4615,4615, SC/X/F  ,N,1,2025
-93 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSEITCS,DIPPPT ,2009,2009, UR/X/M  ,N,1,2025
-94 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSEITCS,DIPPPT ,3423,4253, OBC/X/M ,N,2,2025
+92 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,AIML ,BSC    ,4615,4615, SC/X/F  ,N,1,2025
+93 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE,DIPPPT ,2009,2009, UR/X/M  ,N,1,2025
+94 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,CSE,DIPPPT ,3423,4253, OBC/X/M ,N,2,2025
 95 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,EC     ,DIPPPT ,2500,4447, UR/X/M  ,N,2,2025
 96 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,EC     ,DIPPPT ,4727,4727, OBC/X/M ,N,1,2025
 97 ,BADERIA GLOBAL INSTITUTE OF ENGINEERING & MANAGEMENT JABALPUR , Private ,MECH   ,DIPPPT ,1041,1041, OBC/X/M ,N,1,2025
@@ -114,8 +114,8 @@
 114 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,CSE         ,DIPPPT ,2756,4393, OBC/X/M ,N,5,2025
 115 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,CSE         ,DIPPPT ,4621,4621, SC/X/M  ,N,1,2025
 116 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,CSE         ,BSC    ,3611,4685, OBC/X/M ,N,3,2025
-117 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,CSEIML      ,DIPPPT ,3622,4133, UR/X/F  ,N,2,2025
-118 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,CSEIML      ,DIPPPT ,4477,4477, OBC/X/M ,N,1,2025
+117 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,AIML      ,DIPPPT ,3622,4133, UR/X/F  ,N,2,2025
+118 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,AIML      ,DIPPPT ,4477,4477, OBC/X/M ,N,1,2025
 119 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,EC          ,DIPPPT ,3948,3948, OBC/X/M ,N,1,2025
 120 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,EC          ,DIPPPT , 425, 425, UR/X/M  ,N,1,2025
 121 ,Bansal College of Engineering Obedullaganj Raisen (2002), Private ,EC          ,DIPPPT ,1636,1636, SC/X/M  ,N,1,2025
@@ -144,7 +144,7 @@
 144 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,CIVIL ,DIPPPT , 429 ,2447 , UR/X/M ,N,4,2025
 145 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,CIVIL ,DIPPPT ,3810 ,3810 ,OBC/X/M ,N,1,2025
 146 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,CSE   ,DIPPPT ,4116 ,4116 , UR/X/M ,N,1,2025
-147 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,CSEIML,DIPPPT , 980 , 980 , UR/X/M ,N,1,2025
+147 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,AIML,DIPPPT , 980 , 980 , UR/X/M ,N,1,2025
 148 ,Bansal Institute of Research Technology & Science Bhopal (2008), Private ,MECH  ,DIPPPT , 445 , 445 , UR/X/M ,N,1,2025
 149 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CIVIL         ,DIPPPT ,1563 ,1563, OBC/X/M ,N,1,2025
 150 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CIVIL         ,DIPPPT ,2888 ,2888, UR/X/F  ,N,1,2025
@@ -155,7 +155,7 @@
 155 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CSE           ,DIPPPT ,3322 ,4034, UR/X/M  ,N,4,2025
 156 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CSE           ,DIPPPT ,4081 ,4081, ST/X/M  ,N,1,2025
 157 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CSE           ,DIPPPT ,4374 ,4374, UR/X/F  ,N,1,2025
-158 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,CSEIML        ,DIPPPT ,1618 ,1618, UR/X/M  ,N,1,2025
+158 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,AIML        ,DIPPPT ,1618 ,1618, UR/X/M  ,N,1,2025
 159 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,EC            ,DIPPPT ,3869 ,3869, OBC/X/M ,N,1,2025
 160 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,EC            ,DIPPPT ,3339 ,3339, SC/X/M  ,N,1,2025
 161 ,Bansal Institute of Science & Technology Bhopal (2000), Private ,EC            ,DIPPPT ,3112 ,3112, OBC/X/M ,N,1,2025
@@ -259,8 +259,8 @@
 259 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,CSE        ,DIPPPT ,2741,2741 , UR/X/F ,N,1,2025
 260 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,CSE        ,DIPPPT , 49 ,3681 , UR/X/M ,N,2,2025
 261 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,CSE        ,BSC    ,3692,3692 , UR/X/M ,N,1,2025
-262 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,CSEIML     ,DIPPPT , 247,2195 , UR/X/M ,N,2,2025
-263 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,CSEIML     ,DIPPPT ,3862,3862 , OBC/X/M,N,1,2025
+262 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,AIML     ,DIPPPT , 247,2195 , UR/X/M ,N,2,2025
+263 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,AIML     ,DIPPPT ,3862,3862 , OBC/X/M,N,1,2025
 264 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,EC         ,DIPPPT ,3750,4298 , OBC/X/M,N,2,2025
 265 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,ELECT ELEX ,DIPPPT , 879,1962 , UR/X/F ,N,2,2025
 266 ,Corporate Institute of Science & Technology Bhopal (2008), Private ,ELECT ELEX ,DIPPPT ,1851,3812 , UR/X/M ,N,4,2025
@@ -306,7 +306,7 @@
 306 ,Gwalior Institute of Information Technology Gwalior (2008), Private ,MECH  ,DIPPPT ,3616,3798, SC/X/M ,N,2,2025
 307 ,Gwalior Institute of Information Technology Gwalior (2008), Private ,MECH  ,DIPPPT , 440, 692, UR/X/M ,N,2,2025
 308 ,Gwalior Institute of Information Technology Gwalior (2008), Private ,MECH  ,DIPPPT ,1114,1114, SC/X/M ,N,1,2025
-309 ,Gyan Ganga College of Technology Jabalpur (2006), Private ,AIAIDS  ,DIPPPT ,3087 ,3087, OBC/X/M ,N, 1,2025
+309 ,Gyan Ganga College of Technology Jabalpur (2006), Private ,AIADS  ,DIPPPT ,3087 ,3087, OBC/X/M ,N, 1,2025
 310 ,Gyan Ganga College of Technology Jabalpur (2006), Private ,CSE     ,DIPPPT ,2373 ,2373, OBC/X/M ,N, 1,2025
 311 ,Gyan Ganga College of Technology Jabalpur (2006), Private ,CSE     ,DIPPPT ,4212 ,4212, UR/X/M  ,N, 1,2025
 312 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,AIR         ,DIPPPT ,3463,3463, UR/X/M ,N,1,2025
@@ -319,7 +319,7 @@
 319 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,CSE         ,DIPPPT ,2893,2893, SC/X/M ,N,1,2025
 320 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,CSE         ,DIPPPT ,4653,4653, OBC/X/F,N,1,2025
 321 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,CSEDS       ,DIPPPT ,2413,2413, UR/X/F ,N,1,2025
-322 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,CSEIML      ,DIPPPT ,2075,3401, OBC/X/M,N,2,2025
+322 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,AIML      ,DIPPPT ,2075,3401, OBC/X/M,N,2,2025
 323 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,EC          ,DIPPPT ,2149,2149, ST/X/M ,N,1,2025
 324 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,EC          ,DIPPPT ,1044,4228, OBC/X/M,N,3,2025
 325 ,GYAN GANGA INSTITUTE OF TECHNOLOGY & SCIENCE JABALPUR (2003), Private ,EC          ,DIPPPT ,3579,4319, UR/X/M ,N,2,2025
@@ -343,9 +343,9 @@
 343 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSE         ,DIPPPT , 884,3919, ST/X/F      ,N,2,2025
 344 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSE         ,DIPPPT ,3057,4220, UR/X/M      ,N,4,2025
 345 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSE         ,DIPPPT ,4308,4367, OBC/X/M     ,N,2,2025
-346 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSEIML      ,DIPPPT ,3742,3742, UR/X/F      ,N,1,2025
-347 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSEIML      ,DIPPPT , 200,4440, OBC/X/F     ,N,2,2025
-348 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,CSEIML      ,DIPPPT ,4452,4452, OBC/X/M     ,N,1,2025
+346 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,AIML      ,DIPPPT ,3742,3742, UR/X/F      ,N,1,2025
+347 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,AIML      ,DIPPPT , 200,4440, OBC/X/F     ,N,2,2025
+348 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,AIML      ,DIPPPT ,4452,4452, OBC/X/M     ,N,1,2025
 349 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,EC          ,DIPPPT ,2667,3584, OBC/X/M     ,N,4,2025
 350 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,EC          ,DIPPPT ,3361,4046, ST/X/F      ,N,3,2025
 351 ,Hitkarni College of Engineering & Technology Jabalpur (1997), Private ,EC          ,DIPPPT , 858,4814, UR/X/M      ,N,9,2025
@@ -367,9 +367,9 @@
 367 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSE          ,DIPPPT , 441,1667 , UR/X/M ,N,3,2025
 368 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSE          ,DIPPPT , 885,1956 , UR/X/F ,N,2,2025
 369 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSECS        ,DIPPPT ,3991, 3991, OBC/X/M,N,1,2025
-370 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSEIML       ,DIPPPT ,1065,1065 , OBC/X/M,N,1,2025
-371 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSEIML       ,DIPPPT ,1756,1756 , UR/X/F ,N,1,2025
-372 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,CSEIML       ,DIPPPT ,3568,3568 , UR/X/M ,N,1,2025
+370 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,AIML       ,DIPPPT ,1065,1065 , OBC/X/M,N,1,2025
+371 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,AIML       ,DIPPPT ,1756,1756 , UR/X/F ,N,1,2025
+372 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,AIML       ,DIPPPT ,3568,3568 , UR/X/M ,N,1,2025
 373 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,EC           ,DIPPPT ,3300,3300 , UR/X/F ,N,1,2025
 374 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,EC           ,DIPPPT , 491,4427 , UR/X/M ,N,6,2025
 375 ,IES COLLEGE OF TECHNOLOGY BHOPAL (2007), Private ,ELECT ELEX   ,DIPPPT , 589,2780 , UR/X/F ,N,10,2025
@@ -467,11 +467,11 @@
 467 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSE       ,DIPPPT ,4005 ,4005 , SC/X/F    ,N,1,2025
 468 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSE       ,DIPPPT ,2815 ,4273 , OBC/X/M   ,N,3,2025
 469 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSE       ,DIPPPT , 749 ,4503 , UR/X/M    ,N,6,2025
-470 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSEIML    ,DIPPPT ,4676 ,4676 , UR/X/M    ,N,1,2025
-471 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSEIOT    ,DIPPPT ,1053 ,1053 , UR/X/F    ,N,1,2025
-472 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSEIOT    ,DIPPPT ,3109 ,3109 , OBC/X/F   ,N,1,2025
-473 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSERC     ,DIPPPT ,2825 ,2825 , SC/X/F    ,N,1,2025
-474 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSERC     ,DIPPPT ,1372 ,4231 , ST/X/F    ,N,2,2025
+470 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,AIML    ,DIPPPT ,4676 ,4676 , UR/X/M    ,N,1,2025
+471 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,IOT    ,DIPPPT ,1053 ,1053 , UR/X/F    ,N,1,2025
+472 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,IOT    ,DIPPPT ,3109 ,3109 , OBC/X/F   ,N,1,2025
+473 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSEIL     ,DIPPPT ,2825 ,2825 , SC/X/F    ,N,1,2025
+474 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,CSEIL     ,DIPPPT ,1372 ,4231 , ST/X/F    ,N,2,2025
 475 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,EC        ,DIPPPT ,3268 ,3268 , OBC/X/M   ,N,1,2025
 476 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,EC        ,BSC    ,4595 ,4595 , OBC/X/M   ,N,1,2025
 477 ,IPS Academy Institute of Engineering and Science Indore (1999), Private ,FTS       ,DIPPPT ,3047 ,3047 , SC/X/M    ,N,1,2025
@@ -484,12 +484,12 @@
 484 ,IPS College of Technology & Management Gwalior (2007), Private ,EE     ,DIPPPT ,1995,1995, UR/X/M  ,N,1,2025
 485 ,IPS College of Technology & Management Gwalior (2007), Private ,EE     ,DIPPPT ,4269,4269, OBC/X/M ,N,1,2025
 486 ,IPS College of Technology & Management Gwalior (2007), Private ,MECH   ,DIPPPT ,1950,1950, SC/X/M  ,N,1,2025
-487 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIAIDS    ,DIPPPT , 349 , 349 , OBC/X/F, Y , 1,2025
-488 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIAIDS    ,DIPPPT , 909 , 909 , SC/X/M , Y , 1,2025
-489 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947), GOVT ,AIAIDS    ,DIPPPT ,1522 ,1522 , SC/X/F , Y , 1,2025
-490 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIAIDS    ,DIPPPT , 130 , 130 , UR/X/F , Y , 1,2025
-491 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIAIDS    ,DIPPPT , 12  , 12  , UR/X/M , Y , 1,2025
-492 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIAIDS    ,DIPPPT , 223 , 223 , UR/X/F , Y , 1,2025
+487 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIADS    ,DIPPPT , 349 , 349 , OBC/X/F, Y , 1,2025
+488 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIADS    ,DIPPPT , 909 , 909 , SC/X/M , Y , 1,2025
+489 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947), GOVT ,AIADS    ,DIPPPT ,1522 ,1522 , SC/X/F , Y , 1,2025
+490 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIADS    ,DIPPPT , 130 , 130 , UR/X/F , Y , 1,2025
+491 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIADS    ,DIPPPT , 12  , 12  , UR/X/M , Y , 1,2025
+492 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,AIADS    ,DIPPPT , 223 , 223 , UR/X/F , Y , 1,2025
 493 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,CIVIL     ,DIPPPT , 538 , 538 , OBC/X/M, Y , 1,2025
 494 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,CIVIL     ,DIPPPT ,1153 ,1153 , SC/X/M , Y , 1,2025
 495 ,JABALPUR ENGINEERING COLLEGE JEC JABALPUR  (1947) ,GOVT ,CIVIL     ,DIPPPT ,1655 ,1655 , ST/X/F , Y , 1,2025
@@ -591,14 +591,14 @@
 591 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,CSE     ,DIPPPT ,1526,3837, UR/X/M ,N, 11,2025
 592 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,CSE     ,DIPPPT ,3974,3974, OBC/X/M,N, 1,2025
 593 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,CSECS   ,DIPPPT ,2692,2692, UR/X/M ,N, 1,2025
-594 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,CSEIML  ,DIPPPT ,1941,1941, UR/X/F ,N, 1,2025
-595 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,CSEIML  ,DIPPPT ,2448,2448, UR/X/M ,N, 1,2025
+594 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,AIML  ,DIPPPT ,1941,1941, UR/X/F ,N, 1,2025
+595 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,AIML  ,DIPPPT ,2448,2448, UR/X/M ,N, 1,2025
 596 ,LNCT Lakshmi Narain College of Technology & Science Bhopal (2006), Private ,EC      ,DIPPPT ,3664,3664, UR/X/M ,N, 1,2025
 597 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,CSE    ,DIPPPT ,3394 ,3394 , UR/X/F ,N, 1,2025
 598 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,CSE    ,DIPPPT ,4074 ,4074 , OBC/X/M,N, 1,2025
 599 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,CSE    ,DIPPPT ,2328 ,4373 , UR/X/M ,N, 5,2025
 600 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,CSEDS  ,DIPPPT , 948 ,3911 , UR/X/M ,N, 4,2025
-601 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,CSEIML ,DIPPPT ,1406 ,1406 , UR/X/M ,N, 1,2025
+601 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,AIML ,DIPPPT ,1406 ,1406 , UR/X/M ,N, 1,2025
 602 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,MECH   ,DIPPPT ,3891 ,3891 , UR/X/M ,N, 1,2025
 603 ,LNCT Lakshmi Narain College of Technology Excellence Bhopal (2007), Private ,MECH   ,DIPPPT ,4168 ,4168 , OBC/X/M,N, 1,2025
 604 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIADS     ,DIPPPT ,3746 ,3746 , OBC/X/M ,N, 1,2025
@@ -615,12 +615,12 @@
 615 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSE       ,DIPPPT , 883 , 883 , OBC/X/M ,N, 1,2025
 616 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSE       ,DIPPPT , 31  , 937 , UR/X/F  ,N, 6,2025
 617 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSE       ,DIPPPT , 950 , 950 , OBC/X/F ,N, 1,2025
-618 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,DIPPPT ,4419 ,4654 , OBC/X/M ,N, 3,2025
-619 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,DIPPPT ,2851 ,2851 , OBC/X/F ,N, 1,2025
-620 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,DIPPPT , 888 ,3572 , UR/X/F  ,N, 5,2025
-621 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,DIPPPT , 170 ,3733 , OBC/X/M ,N, 4,2025
-622 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,BSC    ,4314 ,4314 , OBC/X/M ,N, 1,2025
-623 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,CSEIML    ,DIPPPT , 683 ,4335 , UR/X/M  ,N, 22,2025
+618 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,DIPPPT ,4419 ,4654 , OBC/X/M ,N, 3,2025
+619 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,DIPPPT ,2851 ,2851 , OBC/X/F ,N, 1,2025
+620 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,DIPPPT , 888 ,3572 , UR/X/F  ,N, 5,2025
+621 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,DIPPPT , 170 ,3733 , OBC/X/M ,N, 4,2025
+622 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,BSC    ,4314 ,4314 , OBC/X/M ,N, 1,2025
+623 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,AIML    ,DIPPPT , 683 ,4335 , UR/X/M  ,N, 22,2025
 624 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,EC        ,DIPPPT ,2234 ,2234 , UR/X/F  ,N, 1,2025
 625 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,EC        ,DIPPPT ,1963 ,2862 , UR/X/M  ,N, 2,2025
 626 ,LNCT Lakshmi Narain College of Technology Bhopal (1994), Private ,ECACT     ,DIPPPT , 653 , 653 , OBC/X/M ,N, 1,2025
@@ -710,11 +710,11 @@
 710 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITAIAR , DIPPPT ,3883 ,4333 , OBC/X/M, Y , 3,2025
 711 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITAIAR , DIPPPT ,3534 ,3534 , UR/X/F , Y , 1,2025
 712 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITAIAR , DIPPPT ,2708 ,3266 , UR/X/M , Y , 2,2025
-713 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITIOT  , DIPPPT ,4629 ,4629 , OBC/X/M, Y , 1,2025
-714 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITIOT  , DIPPPT ,4275 ,1275 , UR/X/F , Y , 1,2025
-715 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITIOT  , DIPPPT ,2103 ,2103 , OBC/X/M, Y , 1 ,2025
-716 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITIOT  , DIPPPT , 667 ,2848 , UR/X/M , Y , 2,2025
-717 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , ITIOT  , DIPPPT ,3641 ,3641 , UR/X/F , Y , 1,2025
+713 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , IOT  , DIPPPT ,4629 ,4629 , OBC/X/M, Y , 1,2025
+714 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , IOT  , DIPPPT ,4275 ,1275 , UR/X/F , Y , 1,2025
+715 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , IOT  , DIPPPT ,2103 ,2103 , OBC/X/M, Y , 1 ,2025
+716 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , IOT  , DIPPPT , 667 ,2848 , UR/X/M , Y , 2,2025
+717 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT , IOT  , DIPPPT ,3641 ,3641 , UR/X/F , Y , 1,2025
 718 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT ,  MAC   , DIPPPT ,1178 ,1178 , UR/X/M , Y , 1,2025
 719 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT ,  MECH  , DIPPPT ,2737 ,4105, OBC/X/M , Y , 3,2025
 720 ,Madhav Institute of Technology and Science MITS Gwalior (1957) (Deemed University) ,GOVT ,  MECH  , DIPPPT ,2037 ,4430, UR/X/M  , Y , 10,2025
@@ -865,10 +865,10 @@
 865 ,Oriental College of Technology Bhopal (2002), Private ,CSE         ,DIPPPT , 648,4408, OBC/X/F,N,5,2025
 866 ,Oriental College of Technology Bhopal (2002), Private ,CSE         ,BSC    ,4810,4810, UR/X/F ,N,1,2025
 867 ,Oriental College of Technology Bhopal (2002), Private ,CSECS       ,DIPPPT ,4256,4256, SC/X/M ,N,1,2025
-868 ,Oriental College of Technology Bhopal (2002), Private ,CSEIML      ,DIPPPT , 817, 817, SC/X/M ,N,1,2025
-869 ,Oriental College of Technology Bhopal (2002), Private ,CSEIML      ,DIPPPT , 985,2375, UR/X/M ,N,3,2025
-870 ,Oriental College of Technology Bhopal (2002), Private ,CSEIML      ,DIPPPT ,4514,4514, UR/X/F ,N,1,2025
-871 ,Oriental College of Technology Bhopal (2002), Private ,CSEIML      ,DIPPPT ,2913,4624, OBC/X/M,N,5,2025
+868 ,Oriental College of Technology Bhopal (2002), Private ,AIML      ,DIPPPT , 817, 817, SC/X/M ,N,1,2025
+869 ,Oriental College of Technology Bhopal (2002), Private ,AIML      ,DIPPPT , 985,2375, UR/X/M ,N,3,2025
+870 ,Oriental College of Technology Bhopal (2002), Private ,AIML      ,DIPPPT ,4514,4514, UR/X/F ,N,1,2025
+871 ,Oriental College of Technology Bhopal (2002), Private ,AIML      ,DIPPPT ,2913,4624, OBC/X/M,N,5,2025
 872 ,Oriental College of Technology Bhopal (2002), Private ,EC          ,DIPPPT ,1993,1993, UR/X/M ,N,1,2025
 873 ,Oriental College of Technology Bhopal (2002), Private ,ELECT ELEX  ,DIPPPT ,1377,1377, UR/X/F ,N,1,2025
 874 ,Oriental College of Technology Bhopal (2002), Private ,ELECT ELEX  ,DIPPPT ,2847,2847, OBC/X/M,N,1,2025
@@ -885,10 +885,10 @@
 885 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSE     ,DIPPPT ,1056,3661, UR/X/M ,N,5,2025
 886 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEDS   ,DIPPPT ,3082,3082, OBC/X/M,N,1,2025
 887 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEDS   ,DIPPPT ,3921,4421, UR/X/M ,N,2,2025
-888 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEIML  ,DIPPPT ,1751,1751, OBC/X/F,N,1,2025
-889 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEIML  ,DIPPPT , 870,2802, UR/X/M ,N,2,2025
-890 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEIML  ,DIPPPT ,3457,3457, SC/X/F ,N,1,2025
-891 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,CSEIML  ,DIPPPT ,3689,3689, OBC/X/M,N,1,2025
+888 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,AIML  ,DIPPPT ,1751,1751, OBC/X/F,N,1,2025
+889 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,AIML  ,DIPPPT , 870,2802, UR/X/M ,N,2,2025
+890 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,AIML  ,DIPPPT ,3457,3457, SC/X/F ,N,1,2025
+891 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,AIML  ,DIPPPT ,3689,3689, OBC/X/M,N,1,2025
 892 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,EC      ,DIPPPT ,2303,2303, UR/X/M ,N,1,2025
 893 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,ELECT ELEX ,DIPPPT ,2829,2829, UR/X/M ,N,1,2025
 894 ,Oriental Institute of Science & Technology Bhopal (1995), Private ,IT      ,DIPPPT , 329, 329, UR/X/M ,N,1,2025
@@ -900,7 +900,7 @@
 900 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,CIVIL    ,DIPPPT ,3806,4705 , ST/X/M ,N,2,2025
 901 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,CSE      ,DIPPPT ,1538,1538 , OBC/X/F,N,1,2025
 902 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,CSE      ,DIPPPT , 162,4563 , UR/X/M ,N,2,2025
-903 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,CSEITCS  ,DIPPPT , 472, 472 , UR/X/F ,N,1,2025
+903 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,CSE  ,DIPPPT , 472, 472 , UR/X/F ,N,1,2025
 904 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,EC       ,DIPPPT , 635, 635 , OBC/X/M,N,1,2025
 905 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,MECH     ,DIPPPT ,2034,2034 , SC/X/F ,N,1,2025
 906 ,PATEL COLLEGE OF SCIENCE & TECHNOLOGY INDORE (2005), Private ,MECH     ,DIPPPT ,2131,3751 , OBC/X/M,N,8,2025
@@ -924,7 +924,7 @@
 924 ,Prestige Institute of Engineering Management and Research Indore (2008) , Private , MECH   ,DIPPPT ,4515,4599, OBC/X/M,N,2,2025
 925 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,CIVIL       ,DIPPPT ,4710,4710, UR/X/M ,N,1,2025
 926 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,CSE         ,DIPPPT ,3770,3770, UR/X/F ,N,1,2025
-927 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,CSEIML      ,DIPPPT ,2803,2803, UR/X/M ,N,1,2025
+927 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,AIML      ,DIPPPT ,2803,2803, UR/X/M ,N,1,2025
 928 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,EC          ,BSC    ,4672,4672, UR/X/M ,N,1,2025
 929 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,ELECT ELEX  ,DIPPPT ,1558,1558, OBC/X/M,N,1,2025
 930 ,PRESTIGE INSTITUTE OF MANAGEMENT AND RESEARCH BHOPAL ,Private ,ELECT ELEX  ,DIPPPT ,2161,2161, SC/X/M ,N,1,2025
@@ -1060,7 +1060,7 @@
 1060 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,CIVIL    ,DIPPPT ,2547,4825, UR/X/M ,N,2,2025
 1061 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,CSE      ,DIPPPT ,1015,1015, UR/X/F ,N,1,2025
 1062 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,CSE      ,DIPPPT ,3645,3645, OBC/X/M,N,1,2025
-1063 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,CSEAIADS ,DIPPPT ,1920,1920, UR/X/M ,N,1,2025
+1063 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,AIADS ,DIPPPT ,1920,1920, UR/X/M ,N,1,2025
 1064 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,EC       ,DIPPPT ,2777,2777, UR/X/M ,N,1,2025
 1065 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private,ELECT ELEX,DIPPPT , 220,1249, UR/X/M ,N,3,2025
 1066 ,Sagar Institute of Science & Technology (SISTEC) Bhopal (2007), Private ,MECH     ,DIPPPT , 59 ,3164, UR/X/M ,N,5,2025
@@ -1082,21 +1082,21 @@
 1082 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSE        ,DIPPPT , 140, 140, OBC/X/F    , Y , 1,2025
 1083 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSE        ,DIPPPT , 630, 630, OBC/X/M    , Y , 1,2025
 1084 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSE        ,DIPPPT , 634, 759, UR/X/F     , Y , 3,2025
-1085 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT ,1749,1749, OBC/X/M    , Y , 1,2025
-1086 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT ,2677,2677, SC/X/F     , Y , 1,2025
-1087 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT ,4444,4444, SC/X/M     , Y , 1,2025
-1088 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT ,1746,1746, UR/X/F     , Y , 1,2025
-1089 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT , 807, 807, UR/X/M     , Y , 1,2025
-1090 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEAIADS   ,DIPPPT ,1376,1376, OBC/X/M    , Y , 1,2025
+1085 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT ,1749,1749, OBC/X/M    , Y , 1,2025
+1086 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT ,2677,2677, SC/X/F     , Y , 1,2025
+1087 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT ,4444,4444, SC/X/M     , Y , 1,2025
+1088 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT ,1746,1746, UR/X/F     , Y , 1,2025
+1089 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT , 807, 807, UR/X/M     , Y , 1,2025
+1090 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,AIADS   ,DIPPPT ,1376,1376, OBC/X/M    , Y , 1,2025
 1091 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEBC      ,DIPPPT ,3832,3832, OBC/X/M    , Y , 1,2025
 1092 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEBC      ,DIPPPT ,4108,4108, UR/X/F     , Y , 1,2025
 1093 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEBC      ,DIPPPT ,3051,3051, OBC/X/M    , Y , 1,2025
 1094 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEBC      ,DIPPPT ,2771,3192, UR/X/M     , Y , 3,2025
-1095 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEIOT     ,DIPPPT ,1942,1942, OBC/X/F    , Y , 1,2025
-1096 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEIOT     ,DIPPPT ,2210,2635, OBC/X/M    , Y , 2,2025
-1097 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEIOT     ,DIPPPT ,1778,1778, UR/X/F     , Y , 1,2025
-1098 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEIOT     ,DIPPPT ,1464,1464, OBC/X/M    , Y , 1,2025
-1099 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,CSEIOT     ,DIPPPT ,1845,1845, UR/X/F     , Y , 1,2025
+1095 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,IOT     ,DIPPPT ,1942,1942, OBC/X/F    , Y , 1,2025
+1096 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,IOT     ,DIPPPT ,2210,2635, OBC/X/M    , Y , 2,2025
+1097 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,IOT     ,DIPPPT ,1778,1778, UR/X/F     , Y , 1,2025
+1098 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,IOT     ,DIPPPT ,1464,1464, OBC/X/M    , Y , 1,2025
+1099 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,IOT     ,DIPPPT ,1845,1845, UR/X/F     , Y , 1,2025
 1100 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,EE         ,DIPPPT ,2841,2841, OBC/X/F    , Y , 1,2025
 1101 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,EE         ,DIPPPT , 802,3292, UR/X/M     , Y , 4,2025
 1102 ,Samrat Ashok Technological Institute SATI Vidisha (1960) , GOVT ,EE         ,DIPPPT ,1320,3975, OBC/X/M    , Y , 5,2025
@@ -1162,11 +1162,11 @@
 1162 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEDS    ,DIPPPT ,3676,3676, ST/X/F  , Y , 1 ,2025
 1163 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEDS    ,DIPPPT ,1211,1211, UR/X/F  , Y , 1 ,2025
 1164 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEDS    ,DIPPPT , 735, 944, UR/X/M  , Y , 2 ,2025
-1165 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEIML   ,DIPPPT , 972, 972, OBC/X/M , Y , 1 ,2025
-1166 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEIML   ,DIPPPT ,1754,1813, SC/X/F  , Y , 2 ,2025
-1167 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEIML   ,DIPPPT , 165, 165,  UR/X/F , Y , 2 ,2025
-1168 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEIML   ,DIPPPT , 628, 628,  UR/X/F , Y , 1 ,2025
-1169 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,CSEIML   ,DIPPPT , 657, 657, OBC/X/F , Y , 1,2025
+1165 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,AIML   ,DIPPPT , 972, 972, OBC/X/M , Y , 1 ,2025
+1166 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,AIML   ,DIPPPT ,1754,1813, SC/X/F  , Y , 2 ,2025
+1167 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,AIML   ,DIPPPT , 165, 165,  UR/X/F , Y , 2 ,2025
+1168 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,AIML   ,DIPPPT , 628, 628,  UR/X/F , Y , 1 ,2025
+1169 ,SCHOOL OF INFORMATION TECHNOLOGY RGPV BHOPAL ,S.F.I. ,AIML   ,DIPPPT , 657, 657, OBC/X/F , Y , 1,2025
 1170 ,SENDHWA INSTITUTE OF PROFESSIONAL STUDIES BARWANI , Private ,CIVIL,DIPPPT ,3697,3697, UR/X/M ,N, 1 ,2025
 1171 ,Sha-Shib College of Technology Bhopal (2009)      , Private ,MECH ,DIPPPT ,2689,2689, UR/X/M ,N, 1,2025
 1172 ,Shiv Kumar Singh Institute of Technology & Science Indore (2007), Private ,CIVIL      ,DIPPPT ,3744,4499, ST/X/M ,N,3,2025
@@ -1205,7 +1205,7 @@
 1205 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,CIVIL ,DIPPPT ,1562,3808, UR/X/M ,N,2,2025
 1206 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,CSE   ,DIPPPT ,2791,2791, SC/X/M ,N,1,2025
 1207 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,CSEIL ,DIPPPT ,2132,2132, SC/X/M ,N,1,2025
-1208 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,DS    ,DIPPPT , 925,1567, OBC/X/M,N,2,2025
+1208 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,CSEDS    ,DIPPPT , 925,1567, OBC/X/M,N,2,2025
 1209 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,EC    ,DIPPPT ,1375,1375, OBC/X/F,N,1,2025
 1210 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,EC    ,DIPPPT , 359,3091, OBC/X/M,N,2,2025
 1211 ,Shri Dadaji Institute of Technology & Science khandwa, Private ,ELECT ELEX ,DIPPPT , 869, 869, SC/X/M ,N,1,2025
@@ -1319,8 +1319,8 @@
 1319 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,CSE    ,DIPPPT ,3909,3909 , OBC/X/M ,N,1,2025
 1320 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,CSE    ,DIPPPT ,1243,4107 , OBC/X/F ,N,2,2025
 1321 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,CSE    ,DIPPPT ,3574,4761 , ST/X/F  ,N,2,2025
-1322 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,CSEIML ,DIPPPT ,4161,4161 , OBC/X/M ,N,1,2025
-1323 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,CSEIML ,DIPPPT ,4467,4467 , SC/X/M  ,N,1,2025
+1322 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,AIML ,DIPPPT ,4161,4161 , OBC/X/M ,N,1,2025
+1323 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,AIML ,DIPPPT ,4467,4467 , SC/X/M  ,N,1,2025
 1324 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,EC     ,DIPPPT , 383, 383 , ST/X/F  ,N,1,2025
 1325 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,EC     ,DIPPPT , 743, 743 , OBC/X/M ,N,1,2025
 1326 ,Shri Ram Institute of Technology Jabalpur (2001), Private ,EC     ,BSC    ,2347,2347 , OBC/X/M ,N,1,2025
@@ -1331,7 +1331,7 @@
 1331 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,CIVIL ,DIPPPT , 246, 246 , UR/X/M  ,N,1,2025
 1332 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,CIVIL ,DIPPPT ,1083,1083 , OBC/X/M ,N,1  ,2025
 1333 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,CIVIL ,BSC    ,4056,4802 , OBC/X/M ,N,2  ,2025
-1334 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,CSEML ,DIPPPT ,3720,3720 , SC/X/F  ,N,1  ,2025
+1334 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,AIML ,DIPPPT ,3720,3720 , SC/X/F  ,N,1  ,2025
 1335 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,EE    ,DIPPPT ,3014,3014 , OBC/X/M ,N,1  ,2025
 1336 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,EE    ,DIPPPT ,4788,4788 , SC/X/M  ,N,1,2025
 1337 ,SHRI RAMA KRISHNA COLLEGE OF ENGINEERING SCIENCE AND MANAGEMENT (SRKCESM) SATNA ,Private ,MECH  ,DIPPPT ,355 , 355 , OBC/X/M ,N,1,2025
@@ -1374,10 +1374,10 @@
 1374 ,Surabhi College of Engineering & Technology Bhopal (2008), Private ,MECH  ,DIPPPT ,2307 ,2661 , UR/X/M ,N,3,2025
 1375 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSE    ,DIPPPT ,2211,2211, OBC/X/M ,N,1,2025
 1376 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSEDS  ,DIPPPT ,3504,4572, OBC/X/M ,N,3,2025
-1377 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSEIML ,DIPPPT , 344,1266, OBC/X/M ,N,2,2025
-1378 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSEIML ,DIPPPT ,1949,1949, OBC/X/F ,N,1,2025
-1379 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSEIML ,DIPPPT ,2061,2061, UR/X/F  ,N,1,2025
-1380 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,CSEIML ,BSC    ,4377,4377, OBC/X/M ,N,1,2025
+1377 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,AIML ,DIPPPT , 344,1266, OBC/X/M ,N,2,2025
+1378 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,AIML ,DIPPPT ,1949,1949, OBC/X/F ,N,1,2025
+1379 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,AIML ,DIPPPT ,2061,2061, UR/X/F  ,N,1,2025
+1380 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,AIML ,BSC    ,4377,4377, OBC/X/M ,N,1,2025
 1381 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,MECH   ,DIPPPT ,1175,1175, UR/X/F  ,N,1,2025
 1382 ,Sushila Devi Bansal College of Engineering Indore (2006), Private ,MECH   ,DIPPPT ,4009,4009, OBC/X/M ,N,1,2025
 1383 ,Sushila Devi Bansal College of Technology indore (2005), Private ,CIVIL   ,DIPPPT , 548, 548 , ST/X/M ,N,1,2025
@@ -1433,7 +1433,7 @@
 1433 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,CIVIL       ,DIPPPT , 6  ,4737, UR/X/M  ,N,9,2025
 1434 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,CSE         ,DIPPPT ,2832,2832, UR/X/M  ,N,1,2025
 1435 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,CSE         ,DIPPPT ,3140,4346, OBC/X/M ,N,4,2025
-1436 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,CSEIML      ,DIPPPT ,1270,1270, OBC/X/F ,N,1,2025
+1436 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,AIML      ,DIPPPT ,1270,1270, OBC/X/F ,N,1,2025
 1437 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,EC          ,DIPPPT ,2746,2746, UR/X/F  ,N,1,2025
 1438 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,EC          ,DIPPPT ,3210,3210, OBC/X/M ,N,1,2025
 1439 ,Technocrats Institute of Technology & Science Bhopal (2007), Private ,ELECT ELEX  ,DIPPPT ,1386,1386, UR/X/F  ,N,1,2025
@@ -1457,12 +1457,12 @@
 1457 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSE       ,DIPPPT ,2675,2675, OBC/X/M,N,1,2025
 1458 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSE       ,DIPPPT ,3168,3168, UR/X/F ,N,1,2025
 1459 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSE       ,DIPPPT ,2529,4378, UR/X/M ,N,5,2025
-1460 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEAIADS  ,DIPPPT ,1188,1734, UR/X/F ,N,2,2025
-1461 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEAIADS  ,DIPPPT ,1401,4501, UR/X/M ,N,2,2025
-1462 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEIML    ,DIPPPT ,3734,3734, OBC/X/M,N,1,2025
-1463 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEIML    ,DIPPPT ,3334,4424, UR/X/M ,N,5,2025
-1464 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEIML    ,DIPPPT ,3453,4453, SC/X/M ,N,2,2025
-1465 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,CSEIML    ,DIPPPT ,4623,4623, ST/X/M ,N,1,2025
+1460 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIADS  ,DIPPPT ,1188,1734, UR/X/F ,N,2,2025
+1461 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIADS  ,DIPPPT ,1401,4501, UR/X/M ,N,2,2025
+1462 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIML    ,DIPPPT ,3734,3734, OBC/X/M,N,1,2025
+1463 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIML    ,DIPPPT ,3334,4424, UR/X/M ,N,5,2025
+1464 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIML    ,DIPPPT ,3453,4453, SC/X/M ,N,2,2025
+1465 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,AIML    ,DIPPPT ,4623,4623, ST/X/M ,N,1,2025
 1466 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,EC        ,DIPPPT , 836,3658, OBC/X/M,N,3,2025
 1467 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,EC        ,DIPPPT ,4729,4729, SC/X/M ,N,1,2025
 1468 ,TECHNOCRATS INSTITUTE OF TECHNOLOGY BHOPAL (2000), Private ,ELECT ELEX ,DIPPPT , 182 ,1390 , UR/X/M ,N,3,2025
@@ -1610,8 +1610,8 @@
 1610 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,CIVIL       ,DIPPPT , 310,4680, UR/X/M ,N,28,2025
 1611 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,CIVIL       ,DIPPPT ,4773,4773, OBC/X/F,N,1,2025
 1612 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,CSE         ,DIPPPT ,1104,3117, UR/X/M ,N,8,2025
-1613 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,CSEIML      ,DIPPPT ,3505,3505, UR/X/M ,N,1,2025
-1614 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,CSEIML      ,DIPPPT ,2923,3528, UR/X/F ,N,2,2025
+1613 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,AIML      ,DIPPPT ,3505,3505, UR/X/M ,N,1,2025
+1614 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,AIML      ,DIPPPT ,2923,3528, UR/X/F ,N,2,2025
 1615 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,EC          ,DIPPPT ,3173,3347, UR/X/F ,N,2,2025
 1616 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,EC          ,DIPPPT , 423,3873, UR/X/M ,N,8,2025
 1617 ,Vidhyapeeth Institute of Science & Technology Bhopal (2009), Private ,ELECT ELEX ,DIPPPT  ,1504,1726, UR/X/F ,N,3,2025

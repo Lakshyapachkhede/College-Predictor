@@ -83,13 +83,6 @@ def get_rank(cgpa):
 with app.app_context():
         fetch_rank_maps_cache()
 
-@app.route('/', methods=['GET'])
-def home():
-    return render_template('home.html')
-
-@app.route('/about', methods=['GET'])
-def about():
-    return render_template('about.html')
 
 
 @app.route('/predictor', methods=['GET', 'POST'])
@@ -194,5 +187,20 @@ def rank():
     return render_template('rank.html',data=data, predection=get_rank(cgpa))
 
 
+
+
+@app.route("/analysis", methods=['GET'])
+def analysis():
+    return render_template('analysis.html')
+
+@app.route('/', methods=['GET'])
+def home():
+    return render_template('home.html')
+
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
+
+    
 if __name__ == '__main__':
-    app.run(debug=True, host="10.30.140.37", port=80)
+    app.run(debug=True, port=80)

@@ -1,5 +1,6 @@
 from models import SeatInfo, CgpaRankRange, model_to_dict
 from db import db
+from sqlalchemy import case
 
 def interpolate_range(c, c1, r1_min, r1_max, c2, r2_min, r2_max):
     r_min = r1_min + (c - c1) * (r2_min - r1_min) / (c2 - c1)
@@ -72,6 +73,14 @@ def fetch_colleges_from_rank(
     - Results are ordered by closing_rank ascending.
     """
 
+    college_priority = case(
+        (SeatInfo.college_type.in_(['GOVT', 'S.F.I.']), 0),
+        (SeatInfo.college_type == 'Private', 1),
+        else_=2
+    )
+
+
+
     query = SeatInfo.query.filter(
         SeatInfo.year == year,
         SeatInfo.closing_rank >= rank_min,
@@ -80,12 +89,21 @@ def fetch_colleges_from_rank(
         SeatInfo.gender.in_([gender, "OP"])
     )
 
-    if college_type != "Any":
+
+
+    if college_type == "GOVT_S.F.I.":
+        query = query.filter(
+            SeatInfo.college_type.in_(['GOVT', 'S.F.I.'])
+        )
+    elif college_type != "Any":
         query = query.filter(
             SeatInfo.college_type == college_type
         )
 
-    return query.order_by(SeatInfo.closing_rank.asc()).all()
+    
+    
+
+    return query.order_by(college_priority.asc(), SeatInfo.closing_rank.asc()).all()
 
 
 def fetch_cgpa_to_rank_map(year):
@@ -129,6 +147,13 @@ def search_colleges(
     branches=None,
     year=None
 ):
+    
+    college_priority = case(
+        (SeatInfo.college_type.in_(['GOVT', 'S.F.I.']), 0),
+        (SeatInfo.college_type == 'Private', 1),
+        else_=2
+    )
+
     query = SeatInfo.query
 
     # Search by college name or branch
@@ -148,7 +173,11 @@ def search_colleges(
         SeatInfo.gender.in_([gender, "OP"])
     )
 
-    if college_type:
+    if college_type and college_type=="GOVT_S.F.I.":
+     query = query.filter(
+            SeatInfo.college_type.in_(['GOVT', 'S.F.I.'])
+        )
+    elif college_type:
         query = query.filter(SeatInfo.college_type == college_type)
 
     if branches:
@@ -159,8 +188,9 @@ def search_colleges(
 
     # Final query
     results = query.order_by(
+        college_priority.asc(),
         SeatInfo.year.desc(),
-        SeatInfo.college_name.asc()
+        SeatInfo.opening_rank.asc()
     ).all()
 
     return [

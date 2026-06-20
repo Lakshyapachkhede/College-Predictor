@@ -278,4 +278,4 @@ def google():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=80)
+    app.run(debug=True, host = "10.26.189.37", port=80)

@@ -171,14 +171,14 @@ def predictor():
 
 
 
-    predection = get_colleges(cgpa, branches, category, gender, college_type)
+    prediction = get_colleges(cgpa, branches, category, gender, college_type)
  
 
 
     return render_template(
         'predictor.html',  
         data=form_data,
-        predection=predection
+        prediction=prediction
     )
 
 
@@ -232,14 +232,14 @@ def search():
 @app.route('/rank_predictor', methods=['GET', 'POST'])
 def rank():
     if request.method == 'GET':
-            return render_template('rank.html',data=None, predection=None)
+            return render_template('rank.html',data=None, prediction=None)
     
     data = {}
     cgpa = float(request.form.get('cgpa'))
     if cgpa:
         data["cgpa"] = cgpa
         
-    return render_template('rank.html',data=data, predection=get_rank(cgpa))
+    return render_template('rank.html',data=data, prediction=get_rank(cgpa))
 
 
 
@@ -278,4 +278,4 @@ def google():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host = "10.26.189.37", port=80)
+    app.run(debug=True, port=80)

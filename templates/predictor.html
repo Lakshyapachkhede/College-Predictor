@@ -12,7 +12,7 @@
         Enter your academic details to predict the best colleges for lateral entry admission in Madhya Pradesh.
     </p>
 
-    <form action="/predictor" method="POST">
+    <form action="/predictor" method="POST" id="form">
 
         <!-- CGPA Input -->
         <div class="form-group">
@@ -55,12 +55,13 @@
                 <option value="GOVT" {% if college_type=='GOVT' %}selected{% endif %}>Government</option>
                 <option value="Private" {% if college_type=='Private' %}selected{% endif %}>Private</option>
                 <option value="S.F.I." {% if college_type=='S.F.I.' %}selected{% endif %}>S.F.I.</option>
-                <option value="GOVT_S.F.I." {% if college_type=='GOVT_S.F.I.' %}selected{% endif %}>GOVT + S.F.I.</option>
+                <option value="GOVT_S.F.I." {% if college_type=='GOVT_S.F.I.' %}selected{% endif %}>GOVT + S.F.I.
+                </option>
                 <option value="Any" {% if college_type=='Any' %}selected{% endif %}>Any</option>
             </select>
         </div>
 
-        
+
         {% set selected_branches = data.branch if data and data.branch else [] %}
 
         <div class="form-group">
@@ -76,11 +77,31 @@
         <!-- Submit Button -->
         <button type="submit">Predict Colleges</button>
         {% if data %}
-            <button id="downloadPDF">Download PDF</button>
+        <button id="downloadPDF">Download PDF</button>
         {% endif %}
 
     </form>
 </div>
+
+
+<script>
+
+    document.getElementById("form").addEventListener("submit", function (e) {
+        let checkBoxes = document.querySelectorAll('input[type="checkbox"][name="branch"]');
+    
+        const isChecked = [...checkBoxes].some(cb => cb.checked);
+ 
+        if (!isChecked) {
+            e.preventDefault();
+            alert("Please Select At Least One Branch!");
+
+
+        }
+
+    });
+
+</script>
+
 {% if data %}
 <div class="container" id="results">
     <h1>Predicted Colleges</h1>
@@ -95,16 +116,18 @@
         <p><strong>Category:</strong> {{ data.category }}</p>
         <p><strong>Gender:</strong> {{ data.gender }}</p>
         <p><strong>College Type:</strong> {{ data.college_type }}</p>
-        <p><strong>Branch:</strong> 
+        <p><strong>Branch:</strong>
             {% for branch in selected_branches %}
-
-                {{ branch|branch_name }}<strong>,</strong>
-
+            {{ branch|branch_name }}{% if not loop.last %}<strong>,</strong>{% endif %}
+            {% else %}
+            <strong>No branches selected</strong>
             {% endfor %}
+
+
         </p>
     </div>
 
-    {% for year, data in predection.items() %}
+    {% for year, data in prediction.items() %}
     <h2>Year {{year}}</h2>
 
 
@@ -155,221 +178,101 @@
 
 </div>
 
-<div class="feature-icon download-icon" id="download-icon"><img src="{{ url_for('static', filename='img/pdf.png') }}" alt="download button"></div>
+<div class="feature-icon download-icon" id="download-icon"><img src="{{ url_for('static', filename='img/pdf.png') }}"
+        alt="download button"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
 
+
 <script>
-document.getElementById("downloadPDF").addEventListener("click", (e)=>{
-    e.preventDefault();
-    generatePDF();
-}
-);
-document.getElementById("download-icon").addEventListener("click",  generatePDF);
+    window.location.hash = "results"
+</script>
 
-function generatePDF() {
 
-    const { jsPDF } = window.jspdf;
 
-    const doc = new jsPDF({
-        orientation: "portrait",
-        unit: "mm",
-        format: "a4"
-    });
+<script>
+    document.getElementById("downloadPDF").addEventListener("click", (e) => {
+        e.preventDefault();
+        generatePDF();
+    }
+    );
+    document.getElementById("download-icon").addEventListener("click", generatePDF);
 
-    const pageWidth = doc.internal.pageSize.getWidth();
+    function generatePDF() {
 
-    //----------------------------------------------------
-    // Title
-    //----------------------------------------------------
+        const { jsPDF } = window.jspdf;
 
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(18);
-    doc.text("MP BTech Lateral Entry College Predictor", pageWidth / 2, 18, {
-        align: "center"
-    });
+        const doc = new jsPDF({
+            orientation: "portrait",
+            unit: "mm",
+            format: "a4"
+        });
 
-    doc.setDrawColor(0);
-    doc.line(15, 24, pageWidth - 15, 24);
+        const pageWidth = doc.internal.pageSize.getWidth();
 
-    //----------------------------------------------------
-    // Summary Box
-    //----------------------------------------------------
-
-    const summary = document.querySelector("#summary-box");
-
-    let summaryData = [];
-
-    summary.querySelectorAll("p").forEach(p => {
-
-        let strong = p.querySelector("strong");
-
-        if (!strong) return;
-
-        let key = strong.innerText.replace(":", "").trim();
-
-        let value = p.textContent.replace(strong.textContent, "").replace(/\s+/g, " ").trim();
-
-        summaryData.push([key, value]);
-    });
-
-    doc.setFontSize(13);
-    doc.setFont("helvetica", "bold");
-    doc.text("Prediction Criteria", 14, 34);
-
-    doc.autoTable({
-
-        startY: 38,
-
-        head: [],
-
-        body: summaryData,
-
-        theme: "grid",
-
-        styles: {
-
-            font: "helvetica",
-            fontSize: 10,
-            textColor: 0,
-            lineColor: 0,
-            lineWidth: 0.2
-        },
-
-        columnStyles: {
-            0: {
-                fontStyle: "bold",
-                cellWidth: 45
-            }
-        },
-
-        margin: {
-            left: 14,
-            right: 14
-        }
-    });
-
-    //----------------------------------------------------
-    // Each Year
-    //----------------------------------------------------
-
-    const headings = document.querySelectorAll("#results h2");
-
-    headings.forEach((heading, index) => {
-
-        let year = heading.innerText.trim();
-
-        let predictionBox = heading.nextElementSibling;
-
-        let tableWrapper = predictionBox.nextElementSibling;
-
-        let table = tableWrapper.querySelector("table");
-
-        let startY = doc.lastAutoTable.finalY + 12;
-
-        //------------------------------------------------
-        // Page Break
-        //------------------------------------------------
-
-        if (startY > 240) {
-
-            doc.addPage();
-            startY = 20;
-        }
-
-        //------------------------------------------------
-        // Year Heading
-        //------------------------------------------------
+        //----------------------------------------------------
+        // Title
+        //----------------------------------------------------
 
         doc.setFont("helvetica", "bold");
-        doc.setFontSize(15);
-
-        doc.text(year, 14, startY);
+        doc.setFontSize(18);
+        doc.text("MP BTech Lateral Entry College Predictor", pageWidth / 2, 18, {
+            align: "center"
+        });
 
         doc.setDrawColor(0);
-        doc.line(14, startY + 2, pageWidth - 14, startY + 2);
+        doc.line(15, 24, pageWidth - 15, 24);
 
-        //------------------------------------------------
-        // Prediction
-        //------------------------------------------------
+        //----------------------------------------------------
+        // Summary Box
+        //----------------------------------------------------
 
-        doc.setFont("helvetica", "normal");
-        doc.setFontSize(11);
+        const summary = document.querySelector("#summary-box");
 
-        doc.text(
-            predictionBox.innerText.trim(),
-            14,
-            startY + 10
-        );
+        let summaryData = [];
 
-        //------------------------------------------------
-        // Extract Table
-        //------------------------------------------------
+        summary.querySelectorAll("p").forEach(p => {
 
-        const headers = [];
+            let strong = p.querySelector("strong");
 
-        table.querySelectorAll("thead th").forEach(th => {
-            headers.push(th.innerText.trim());
+            if (!strong) return;
+
+            let key = strong.innerText.replace(":", "").trim();
+
+            let value = p.textContent.replace(strong.textContent, "").replace(/\s+/g, " ").trim();
+
+            summaryData.push([key, value]);
         });
 
-        const rows = [];
-
-        table.querySelectorAll("tbody tr").forEach(tr => {
-
-            const row = [];
-
-            tr.querySelectorAll("td").forEach(td => {
-
-                row.push(td.innerText.trim());
-
-            });
-
-            rows.push(row);
-        });
-
-        //------------------------------------------------
-        // Table
-        //------------------------------------------------
+        doc.setFontSize(13);
+        doc.setFont("helvetica", "bold");
+        doc.text("Prediction Criteria", 14, 34);
 
         doc.autoTable({
 
-            head: [headers],
+            startY: 38,
 
-            body: rows,
+            head: [],
 
-            startY: startY + 16,
+            body: summaryData,
 
             theme: "grid",
-
-            headStyles: {
-
-                fillColor: [255, 255, 255],
-                textColor: 0,
-                lineColor: 0,
-                lineWidth: 0.3,
-                fontStyle: "bold"
-            },
 
             styles: {
 
                 font: "helvetica",
-                fontSize: 8,
-
+                fontSize: 10,
                 textColor: 0,
-
                 lineColor: 0,
-
-                lineWidth: 0.2,
-
-                overflow: "linebreak",
-
-                cellPadding: 2
+                lineWidth: 0.2
             },
 
-            alternateRowStyles: {
-
-                fillColor: [255, 255, 255]
+            columnStyles: {
+                0: {
+                    fontStyle: "bold",
+                    cellWidth: 45
+                }
             },
 
             margin: {
@@ -377,86 +280,216 @@ function generatePDF() {
                 right: 14
             }
         });
-    });
 
-    //----------------------------------------------------
-    // Footer (Page Number)
-    //----------------------------------------------------
+        //----------------------------------------------------
+        // Each Year
+        //----------------------------------------------------
 
-    const pages = doc.internal.getNumberOfPages();
+        const headings = document.querySelectorAll("#results h2");
 
-    for (let i = 1; i <= pages; i++) {
+        headings.forEach((heading, index) => {
 
-        doc.setPage(i);
+            let year = heading.innerText.trim();
 
-        doc.setFontSize(9);
+            let predictionBox = heading.nextElementSibling;
 
+            let tableWrapper = predictionBox.nextElementSibling;
+
+            let table = tableWrapper.querySelector("table");
+
+            let startY = doc.lastAutoTable.finalY + 12;
+
+            //------------------------------------------------
+            // Page Break
+            //------------------------------------------------
+
+            if (startY > 240) {
+
+                doc.addPage();
+                startY = 20;
+            }
+
+            //------------------------------------------------
+            // Year Heading
+            //------------------------------------------------
+
+            doc.setFont("helvetica", "bold");
+            doc.setFontSize(15);
+
+            doc.text(year, 14, startY);
+
+            doc.setDrawColor(0);
+            doc.line(14, startY + 2, pageWidth - 14, startY + 2);
+
+            //------------------------------------------------
+            // Prediction
+            //------------------------------------------------
+
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(11);
+
+            doc.text(
+                predictionBox.innerText.trim(),
+                14,
+                startY + 10
+            );
+
+            //------------------------------------------------
+            // Extract Table
+            //------------------------------------------------
+
+            const headers = [];
+
+            table.querySelectorAll("thead th").forEach(th => {
+                headers.push(th.innerText.trim());
+            });
+
+            const rows = [];
+
+            table.querySelectorAll("tbody tr").forEach(tr => {
+
+                const row = [];
+
+                tr.querySelectorAll("td").forEach(td => {
+
+                    row.push(td.innerText.trim());
+
+                });
+
+                rows.push(row);
+            });
+
+            //------------------------------------------------
+            // Table
+            //------------------------------------------------
+
+            doc.autoTable({
+
+                head: [headers],
+
+                body: rows,
+
+                startY: startY + 16,
+
+                theme: "grid",
+
+                headStyles: {
+
+                    fillColor: [255, 255, 255],
+                    textColor: 0,
+                    lineColor: 0,
+                    lineWidth: 0.3,
+                    fontStyle: "bold"
+                },
+
+                styles: {
+
+                    font: "helvetica",
+                    fontSize: 8,
+
+                    textColor: 0,
+
+                    lineColor: 0,
+
+                    lineWidth: 0.2,
+
+                    overflow: "linebreak",
+
+                    cellPadding: 2
+                },
+
+                alternateRowStyles: {
+
+                    fillColor: [255, 255, 255]
+                },
+
+                margin: {
+                    left: 14,
+                    right: 14
+                }
+            });
+        });
+
+        //----------------------------------------------------
+        // Footer (Page Number)
+        //----------------------------------------------------
+
+        const pages = doc.internal.getNumberOfPages();
+
+        for (let i = 1; i <= pages; i++) {
+
+            doc.setPage(i);
+
+            doc.setFontSize(9);
+
+            doc.setTextColor(0);
+
+            doc.text(
+                `Page ${i} of ${pages}`,
+                pageWidth / 2,
+                290,
+                {
+                    align: "center"
+                }
+            );
+        }
+
+        const totalPages = doc.internal.getNumberOfPages();
+
+        // Go to the last page
+        doc.setPage(totalPages);
+
+        const pageHeight = doc.internal.pageSize.getHeight();
+
+
+        let y = pageHeight - 25;
+
+        // Separator line
+        doc.setDrawColor(0);
+        doc.line(15, y, pageWidth - 15, y);
+
+        y += 8;
+
+        // Created by
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(10);
+        doc.text("Lakshya Pachkhede", pageWidth / 2, y, {
+            align: "center"
+        });
+
+        y += 6;
+
+        // Website
+        doc.setFont("helvetica", "normal");
         doc.setTextColor(0);
 
+        // Display text
         doc.text(
-            `Page ${i} of ${pages}`,
+            "https://pachkhedelakshya.pythonanywhere.com",
             pageWidth / 2,
-            290,
-            {
-                align: "center"
-            }
+            y,
+            { align: "center" }
         );
+
+        // Make it clickable
+        doc.link(
+            pageWidth / 2 - 35,
+            y - 4,
+            70,
+            6,
+            { url: "https://pachkhedelakshya.pythonanywhere.com" }
+        );
+
+        //----------------------------------------------------
+        // Save
+        //----------------------------------------------------
+
+        doc.save(`College_Prediction_Report ${new Date().getTime()}.pdf`);
     }
-
-    const totalPages = doc.internal.getNumberOfPages();
-
-    // Go to the last page
-    doc.setPage(totalPages);
-
-    const pageHeight = doc.internal.pageSize.getHeight();
-
-
-    let y = pageHeight - 25;
-
-    // Separator line
-    doc.setDrawColor(0);
-    doc.line(15, y, pageWidth - 15, y);
-
-    y += 8;
-
-    // Created by
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(10);
-    doc.text("Lakshya Pachkhede", pageWidth / 2, y, {
-        align: "center"
-    });
-
-    y += 6;
-
-    // Website
-    doc.setFont("helvetica", "normal");
-    doc.setTextColor(0);
-
-    // Display text
-    doc.text(
-        "https://pachkhedelakshya.pythonanywhere.com",
-        pageWidth / 2,
-        y,
-        { align: "center" }
-    );
-
-    // Make it clickable
-    doc.link(
-        pageWidth / 2 - 35,
-        y - 4,
-        70,
-        6,
-        { url: "https://pachkhedelakshya.pythonanywhere.com" }
-    );
-
-    //----------------------------------------------------
-    // Save
-    //----------------------------------------------------
-
-    doc.save(`College_Prediction_Report ${new Date().getTime()}.pdf`);
-}
 </script>
 {% endif %}
+
+
 
 
 {% endblock %}

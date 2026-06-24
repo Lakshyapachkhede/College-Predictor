@@ -453,7 +453,7 @@ function generatePDF() {
     // Save
     //----------------------------------------------------
 
-    doc.save("College_Prediction_Report.pdf");
+    doc.save(`College_Prediction_Report ${new Date().getTime()}.pdf`);
 }
 </script>
 {% endif %}
